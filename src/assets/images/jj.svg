@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>jj</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-18.2827819%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF9677" offset="0%"></stop>
+            <stop stop-color="#FD7A57" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0_首页改版_v1" transform="translate(-44.000000, -162.000000)">
+            <g id="jj" transform="translate(44.000000, 162.000000)">
+                <g id="Group-12">
+                    <circle id="Oval" fill="#FFE6DD" cx="45.5" cy="45.5" r="45.5"></circle>
+                    <g id="Group-9" transform="translate(17.000000, 5.000000)">
+                        <g id="Group-5">
+                            <g id="Group-2">
+                                <rect id="Rectangle-4" fill="#FD7A57" x="0" y="0" width="58" height="8" rx="2"></rect>
+                                <rect id="Rectangle-5" fill="url(#linearGradient-1)" x="2.63636364" y="4" width="52.7272727" height="72"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-7" transform="translate(27.000000, 25.000000)" stroke="#FFFFFF" stroke-width="3">
+                    <polyline id="Path-5" stroke-linecap="round" stroke-linejoin="round" points="0 22.4964499 6.70046438 31 14.0609415 17.3912185 20.651864 28.4521556 36.6035156 0.987720041"></polyline>
+                    <polyline id="Path-4" points="29.4521484 13.2763672 36.796875 0.645507812 24.8364258 6.9609375"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+@import "~style";
+
+.shop-setting{
+  //我的职工部分
+  .employee-container{
+    .ant-table-bordered.ant-table-empty .ant-table-placeholder{
+        border: 0;
+    }
+    .employee-top{
+        background-color: @white;
+        .employee-btn{
+            margin-top: 1.5rem;
+            .ant-btn{
+                width: 200px;
+            }
+        }
+    }
+    .employee-bottom{
+        margin-top: 1.5rem;
+        background-color: @white;
+        .ant-table.ant-table-bordered .ant-table-title{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .ant-table.ant-table-bordered .ant-table-title{
+            border: none;
+        }
+        table{
+            text-align: center;
+            border: none;
+            padding: 1.5rem;
+            padding-top: 0;
+            th{
+                text-align: center;
+                width: 16.66667%;
+                border: 0;
+                background: #F7FAFA;
+            }
+            .last-column{
+                border-right: 0;
+            }
+            .password{
+                .ant-input{
+                    border: 0;
+                }
+            }
+            tbody{
+                td{
+                    background-color: @white;
+                    width: 16.66667%;
+                }
+                td.last-column .ant-btn::after{
+                    content: '\e670';
+                    color: @bule;
+                    font-size: @font-size-24;
+                    vertical-align: middle;
+                    margin-left: 0.5rem;
+                    background-color: @white;
+                }
+            }
+        }
+        //分页
+        .pagenation-box{
+            text-align: right;
+            padding-right: 1rem;
+            padding-bottom: 20px;
+            ul{
+                height: 70px;
+                line-height: 70px;
+                .ant-pagination-options-quick-jumper{
+                    line-height: unset;
+                }
+                .ant-pagination.mini .ant-pagination-item{
+                    border: 0.0625rem solid #d9d9d9;
+                }
+            }
+        }
+    }
+  }
+}

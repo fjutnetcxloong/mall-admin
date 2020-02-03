@@ -1,0 +1,264 @@
+@import "~style";
+.template-compile-five {
+    position: relative;
+    // .my-carousel{
+    //     .ant-carousel .slick-slide {
+    //         text-align: center;
+    //         height: 350px;
+    //         line-height: 350px;
+    //       }
+    // }
+    //静态图片
+    .static {
+        margin-right: 24px;
+        div {
+            margin-bottom: 12px;
+            span:nth-child(1) {
+                font-size: @font-size-16;
+                color: @dark-dark;
+                margin-right: 23px;
+            }
+            span:nth-child(2) {
+                font-size: @font-size-12;
+                color: @gray;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    //编辑面板
+    .compile-box {
+        margin-right: 48px;
+        //标题
+        .compile {
+            margin-bottom: 12px;
+            font-size: @font-size-16;
+            color: @dark-dark;
+        }
+        //搜索栏背景
+        .head {
+            width: 100%;
+            height: 110px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 110px;
+            }
+            .head-base {
+                width: 100%;
+                height: 110px;
+                position: absolute;
+                top: 0;
+                background-size: 100% 100% !important;
+                background: url("../../../../../../assets/images/fake.png") no-repeat center;
+            }
+        }
+        .ant-carousel .slick-dots li button{
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            background-color: #030303;
+        }
+        .ant-carousel .slick-dots li.slick-active button{
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: #bdc3cc;
+        }
+        .ant-carousel .slick-dots-bottom{
+            bottom: -10px;
+            right: 1rem;
+        }
+        .ant-carousel .slick-dots{
+            width: unset;
+        }
+        //banner图
+        .ant-carousel,.banner-img {
+            width: 372px;
+            min-height: 386px;
+            // height: 447px;
+            // .slick-active{
+            //     height:350px;
+            // }
+            img{
+                width:100%;
+                display:block;
+            }
+            .slick-slide {
+                div {
+                    height: inherit;
+                }
+            }
+        }
+        //标题栏
+        .title-bar {
+            color: @dark-dark;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: @font-size-16;
+            margin-top: 20px;
+            .products {
+                color: @dark-dark;
+                padding: 0 10px 2px;
+                margin-bottom: 10px;
+            }
+            div:nth-child(2) {
+                margin-top: 5px;
+                font-size: @font-size-14;
+                color: @dark-dark;
+            }
+        }
+
+        .handpick-box {
+            display: flex;
+            padding: 0 25px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            .handpick {
+                //flex: 0.5;
+                width: 50%;
+                padding: 0 4px;
+                margin-bottom: 10px;
+                height: 200px;
+                    .handpick-img {
+                        width: 100%;
+                        border: 1px solid @to-light-gray;
+                        height: 156px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        .hot-sale-box {
+            position: relative;
+            padding: 0 25px 0 55px;
+            margin-bottom: 24px;
+            .hot-sale {
+                text-align: -webkit-right;
+                margin-bottom: 16px;
+                .hot-sale-img {
+                    height: 132px;
+                    text-align: right;
+                    background: #FF6633;
+                    img {
+                        width: 90%;
+                        height: 100%;
+                    }
+                }
+                .space {
+                    width: 90%;
+                }
+            }
+            .hot-sale-one {
+                .sale-one-img {
+                    width: 90%;
+                    //height: 132px;
+                    img {
+                        width: 100%;
+                        height: 132px;
+                        margin-top: 23px;
+                        position: relative;
+                    }
+                }
+                margin-bottom: 16px;
+            }
+            .hot-sale-one:before {
+                content: '';
+                position: absolute;
+                right: 25px;
+                width: 113px;
+                height: 113px;
+                background: #FF6633;;
+            }
+        }
+        .hot-sale-two {
+            padding: 0 30px;
+            margin-bottom: 16px;
+            //height: 122px;
+            img {
+                width: 100%;
+                height: 122px;
+            }
+    }
+        .hot-sale-three {
+            position: relative;
+            padding: 0 36px;
+            img {
+                width: 100%;
+                height: 132px;
+                position: relative;
+            }
+        }
+        .hot-sale-three:before {
+            content: '';
+            position: absolute;
+            top: 34px;
+            height: 93px;
+            width: 90%;
+            left: 5%;
+            background: #FF6633;
+        }
+    }
+
+        //公用标题-价格
+        .headline-price {
+            display: flex;
+            justify-content: space-between;
+            .headline {
+                font-size: @font-size-14;
+                margin-bottom: 3px;
+            }
+            .price {
+                span:nth-child(1) {
+                    color: @dark-dark;
+                    font-size: @font-size-10;
+                    margin-right: 5px;
+
+                    span {
+                        font-size: @font-size-14;
+                    }
+                }
+                span:nth-child(2) {
+                    font-size: @font-size-10;
+                    color: @gray;
+                    text-decoration:line-through
+                }
+            }
+        }
+
+        .headline-price-take {
+            //display: flex;
+            //justify-content: space-between;
+            .headline {
+                font-size: @font-size-14;
+                margin-bottom: 3px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+            .price {
+                span:nth-child(1) {
+                    color: @dark-dark;
+                    font-size: @font-size-10;
+                    margin-right: 10px;
+
+                    span {
+                        font-size: @font-size-14;
+                    }
+                }
+                span:nth-child(2) {
+                    font-size: @font-size-10;
+                    color: @gray;
+                    text-decoration:line-through
+                }
+            }
+        }
+    }
+

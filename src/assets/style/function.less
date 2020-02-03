@@ -1,0 +1,8 @@
+//字数超出行宽省略
+.TextareaOverflow(@num:2){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @num;
+    -webkit-box-orient: vertical;
+}

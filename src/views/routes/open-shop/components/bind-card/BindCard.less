@@ -1,0 +1,95 @@
+@import '~style';
+
+.info-page{
+    background: @white;
+}
+.form-content{
+    padding-left: 45px;
+    margin-top: 60px;
+    border-bottom: none !important;
+    .ant-col-18 {
+        .explain {
+            text-indent: 9em;
+        }
+    }
+    .card-title{
+        text-align: center;
+        padding-left: 40px;
+        color:@place-color;
+        font-size: @font-size-14;
+        margin-bottom: 20px;
+    }
+    .title-card{
+        font-size: @font-size-18;
+        color: @dark-dark;
+        font-weight: 500;
+    }
+    .city{
+        .ant-select{
+            margin-left: 15px;
+        }
+        .ant-select:nth-child(1){
+            margin-left: 0;
+        }
+        .ant-select-selection--single{
+            width: 170px;
+        }
+        .ant-form-item-control-wrapper{
+            width: auto !important;
+            margin-right: 20px;
+        }
+        .ant-form-item-control{
+            .ant-form-item{
+                margin-bottom: 0;
+            }
+        }
+        // ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft  ant-select-dropdown-hidden
+}
+    .btn-box2{
+    // padding-left: 400px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    .ant-btn{
+        width: 128px;
+    }
+    .ant-btn:nth-child(1) {
+        color: @bule;
+        background: @white;
+        border: 1px solid @bule;
+    }
+    .ant-btn:nth-child(2){
+        margin-left: 40px;
+    }
+}
+    .ant-form-item {
+        .ant-col-4 {
+            line-height: 32px;
+        }
+        .ant-col-10, .ant-col-20 {
+            min-height: 40px;
+            .ant-form-explain {
+                margin: 3px 0 2px 0;
+            }
+        }
+        .ant-col-20 {
+            .ant-form-item-with-help {
+                margin-bottom: -24px !important;
+            }
+        }
+    }
+}
+.bind-card{
+    .login-form{
+        .city{
+            // margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .has-error .ant-form-explain{
+            margin-bottom: 3px 0 0;
+        }
+    }
+}

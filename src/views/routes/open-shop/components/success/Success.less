@@ -1,0 +1,109 @@
+@import "~style";
+
+.success-content{
+    padding-left: 45px;
+    margin-top: 60px;
+    border-bottom: none !important;
+    text-align: center;
+    .icon-success:before{
+        content: '\e631';
+        font-size: @font-size-100;
+        color:@bule;
+    }
+    .icon-filed:before{
+        content: '\e65d';
+        font-size: @font-size-100;
+        color:@red;
+    }
+    .success-logo{
+        height: 130px;
+    }
+    .submit-allow{
+        .count-down{
+            padding: 60px 0;
+            span{
+                width:32px;
+                height:32px;
+                line-height: 32px;
+                text-align: center;
+                background:#e6e6e6;
+                border-radius:50%;
+                display: inline-block;
+            }
+        }
+        .ant-btn{
+            background: @bule;
+            width: 240px;
+            color: @white;
+        }
+    }
+    .allow{
+        text-align: left;
+        margin-top: 90px;
+        font-size: @font-size-14;
+        .allow-title{
+            color: @place-color;
+            margin-bottom: 25px;
+        }
+        .allow-num{
+            color: @dark-gray;
+            margin-bottom: 25px;
+            span:nth-child(2){
+                margin-left: 25px;
+                display: inline-block;
+            }
+        }
+        .send{
+            position: absolute;
+            margin-left: 25px;
+            top: -6px;
+            background: #E6E6E6;
+            color: @font-dark;
+            span{
+            font-size: @font-size-14;
+            }
+        }
+    }
+    .sign{
+        .ant-btn{
+            position: initial;
+            width: 240px;
+            color: @white;
+            margin-top: 50px;
+            margin-left: 0;
+            span{
+                font-size: @font-size-14;
+            }
+        }
+        .QR-code{
+            img{
+                width: 160px;
+                height: 160px;
+            }
+        }
+        .flow{
+            color:@gray;
+            font-size: @font-size-14;
+            line-height: 35px;
+            .warning-text{
+                font-size: @font-size-16;
+                color:@crimson-red;
+            }
+        }
+    }
+    .filed-content{
+        .filed-desc{
+            width: 320px;
+            // margin-top: 60px;
+            margin: 60px auto;
+        }
+        .filed-btn{
+            margin-bottom: 60px;
+            width: 240px;
+        }
+    }
+    .text-desc{
+        width: 600px;
+        // letter-spacing:8px;
+    }
+}

@@ -1,0 +1,102 @@
+@import "~style";
+.login{
+    // background:rgba(242,242,242,1);
+    // opacity:0.5;
+
+    .content{
+        width: 1200px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    .ant-layout-header{
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        z-index: @z-index-level4;
+        background-color: @white;
+    }
+    .ant-layout-footer{
+        background:none;
+    }
+    .ant-layout-content{
+        margin-top: 140px;
+        background: @white;
+    }
+    .login-bg {
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 30px;
+        min-height: 580px;
+        .login-bg-img {
+            background: url('../../../../assets/images/theme.png') no-repeat ;
+            height: 482px;
+        }
+        .ant-input-affix-wrapper .ant-input-suffix{
+            display: none;
+        }
+        //.login-theme{
+        //    width: 100%;
+        //}
+        .ant-card-extra{
+            font-size: @font-size-12;
+            color: @bule;
+            cursor: pointer;
+        }
+        .reg-free{
+            float: right;
+            background-color: @white;
+        }
+        .ant-card-bordered {
+            border: none;
+            .ant-card-head-wrapper{
+                border-bottom: 1px solid #E6E6E6;
+            }
+            .ant-card-head {
+                border-bottom: none;
+            }
+        }
+        .ant-tabs .ant-tabs-large-bar .ant-tabs-nav-container{
+            font-weight: 600;
+        }
+        .login-nav-switch{
+            width: 100%;
+            text-align: center;
+            .ant-card-head-title{
+                text-align: left;
+                cursor: pointer;
+            }
+            .ant-form-item{
+                margin-bottom: 0;
+            }
+        }
+        .ant-btn{
+            height: 40px;
+            width: 100%;
+            border: none;
+        }
+        .ant-input{
+            height: 40px;
+        }
+        .total-get-code:hover, .total-get-code:focus, .total-get-code:active, .total-get-code.active{
+            background: #E6E6E6;
+            color: rgba(0, 0, 0, 0.65)
+        }
+    }
+    .dowload-btn{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        .dowload-btn-img {
+            background: url('../../../../assets/images/zmyglogo.png') no-repeat;
+            height: 48px;
+            width: 48px;
+        }
+        .ant-btn{
+            margin: auto 0;
+            background-color: @white;
+            color: #008BCC;
+        }
+    }
+}

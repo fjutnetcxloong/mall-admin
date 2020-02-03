@@ -1,0 +1,85 @@
+@import "~style";
+
+.shop-setting{
+  //店铺认证部分
+  .certification-container{
+    .login-form{
+        .information{
+            .avatar-box label{
+                position: relative;
+                top: -8px;
+            }
+        }
+        .certification-modify-input{
+            width: 360px;
+        }
+    }
+    .ant-form-item{
+        margin-bottom: 10px;
+    }
+    .coperation-radio{
+        .ant-form-item-control{
+            line-height: 32px;
+        }
+    }
+    .line-height40{
+        .ant-form-item-label{
+            line-height: 40px;
+        }
+    }
+    .login-form{
+        .ant-form-item-children{
+            display: block;
+        }
+        .ant-form-item-label{
+            width: 150px;
+        }
+    }
+    .people-info .ant-form-item-children{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .title-num-order{
+        color: @bule;
+        font-size: @font-size-18;
+        font-weight: 500;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .ant-col{
+        .title{
+            font-size: @font-size-18;
+            color:@dark-dark;
+            // margin-left: 60px;
+        }
+    }
+    .ant-form-item-label > label{
+        color: @gray;
+    }
+    .gray-line{
+      .gray-line-border();
+        // border-bottom: 1px solid #E1E3E6;
+        // width: 95%;
+        // margin: auto;
+        // margin-top: 1.5rem;
+    }
+    .author-box{
+        padding: 55px;
+    }
+    .evidentiary-material{
+        .picture2{
+            .ant-form-item-control{
+                .my-upload{
+                    .avatar-uploader.ant-upload-picture-card-wrapper{
+                        .ant-upload{
+                            background: url('../../../../assets/images/empty.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}

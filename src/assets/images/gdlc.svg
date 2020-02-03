@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>gdlc</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-9.1281467%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C293FF" offset="0%"></stop>
+            <stop stop-color="#9974FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0_首页改版_v1" transform="translate(-603.000000, -162.000000)">
+            <g id="gdlc" transform="translate(603.000000, 162.000000)">
+                <g id="Group-21">
+                    <g id="Group-17">
+                        <g id="Group-13">
+                            <g id="Group-12">
+                                <circle id="Oval" fill="#F5EAFF" cx="45.5" cy="45.5" r="45.5"></circle>
+                                <g id="Group-9" transform="translate(17.000000, 5.000000)">
+                                    <g id="Group-5">
+                                        <g id="Group-2">
+                                            <rect id="Rectangle-4" fill="#AA81FF" x="0" y="0" width="58" height="8" rx="2"></rect>
+                                            <rect id="Rectangle-5" fill="url(#linearGradient-1)" x="2.63636364" y="4" width="52.7272727" height="72"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-23" transform="translate(28.000000, 23.000000)" stroke="#FFFFFF" stroke-width="3">
+                    <g id="Group-25" transform="translate(13.000000, 16.000000)" stroke-linecap="round">
+                        <polyline id="Path-20" points="1.81818182 0.278545673 5.45454545 3.00955529 9.09090909 0.278545673"></polyline>
+                        <path d="M5.45454545,4.61538462 L5.45454545,11.8855168" id="Path-22"></path>
+                        <path d="M1.68590199,3.69230769 L9.20020028,3.69230769" id="Path-21"></path>
+                        <path d="M0.758167614,7.84615385 L10,7.84615385" id="Path-21"></path>
+                    </g>
+                    <path d="M0,10.7707337 L0,28 C3.38176876e-16,30.7614237 2.23857625,33 5,33 L31,33 C33.7614237,33 36,30.7614237 36,28 L36,10.7444488 C36,10.192164 35.5522847,9.74444877 35,9.74444877 C34.8264585,9.74444877 34.6559042,9.78961122 34.5051048,9.87549607 L28.5230935,13.2824346 C28.197561,13.4678353 27.7957064,13.4557354 27.4819185,13.2510846 L20.6993994,8.82756343 C19.0557243,7.75556762 16.9369292,7.74416972 15.281816,8.79841993 L8.28409411,13.2557284 C7.96740424,13.4574489 7.56440402,13.4647676 7.24059872,13.2746787 L1.50625855,9.90835198 C1.02997826,9.6287531 0.417217125,9.78819489 0.13761825,10.2644752 C0.0475077339,10.4179732 2.0024674e-16,10.5927407 2.22044605e-16,10.7707337 Z" id="Path-6"></path>
+                    <circle id="Oval-4" cx="18.5" cy="3.5" r="3.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

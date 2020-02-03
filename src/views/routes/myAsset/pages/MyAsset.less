@@ -1,0 +1,96 @@
+@import "~style";
+
+//我的资产部分
+.my-asset-container{
+    .property-card-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 1.5rem;
+        div{
+            width: 25%;
+            p:nth-child(1) {
+                .TextareaOverflow(1);
+            }
+        }
+        div:nth-child(1) {
+            position: relative;
+            p:nth-child(2) {
+                color: @dark-dark;
+            }
+        }
+        div:nth-child(1)::after {
+            content: '';
+            width: 0;
+            height: 36px;
+            border-right: 1px solid #ECEFF1;
+            position: absolute;
+            top: 25%;
+            right: 0;
+        }
+        p {
+            margin: 0;
+        }
+        background-color: @white;
+        height: 104px;
+        box-shadow: 0 0 20px 0 rgba(204, 204, 204, 0.1);
+        border-radius: 4px;
+        text-align: center;
+        div p:nth-child(1) {
+            font-size: @font-size-24;
+            font-family: SourceHanSansCN-Medium;
+            font-weight: 500;
+            color: @bule;
+        }
+        div p:nth-child(2) {
+            font-size: @font-size-14;
+            font-family: SourceHanSansCN-Light;
+            font-weight: 300;
+            color: @gray;
+        }
+
+        .total-income p:nth-child(2) {
+            color: #000;
+        }
+    }
+    .bank-card-container {
+        padding-left: 1.5rem;
+        padding-top: 15px;
+        .bank-card-coontainer-top{
+            display: flex;
+            justify-content: flex-start;
+            .bank-css-position{
+                width: 42px;
+                height: 42px;
+            }
+        }
+        p {
+            margin: 0;
+        }
+        padding: auto;
+        height: 104px;
+        box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.2);
+        border-radius: 4px;
+        color: @white;
+        font-family: SourceHanSansCN-Medium;
+        .bank-title {
+            font-weight: 500;
+            color: #FFFEFE;
+            font-size: @font-size-16;
+        }
+        .bank-add {
+            font-size: @font-size-12;
+            font-family: SourceHanSansCN-Light;
+            font-weight: 300;
+            opacity: 0.5;
+        }
+        .bank-number {
+            font-size: @font-size-24;
+            font-weight: 500;
+        }
+    }
+    .search-link{
+        cursor: pointer;
+        color: @ginger-gray;
+    }
+}

@@ -1,0 +1,53 @@
+@import "~style";
+
+.logistics-box {
+    .ant-steps {
+        .ant-steps-item {
+            //步骤条竖线样式
+            .ant-steps-item-tail {
+                left: -4px;
+            }
+            .ant-steps-item-tail::after {
+                height: 115%;
+            }
+            //内容样式
+            .ant-steps-item-content {
+                width: auto;
+                .ant-steps-item-description {
+                    margin-bottom: 40px;
+                }
+            }
+            //步骤条小圆点样式
+            .ant-steps-item-icon {
+                width: 9px;
+                height: 9px;
+                .ant-steps-icon {
+                    .ant-steps-icon-dot {
+                        margin-left: 4px;
+                        //border: 3px solid rgba(204,239,255,1);
+                    }
+                    .ant-steps-icon-dot::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+        //步骤条小圆点样式
+        .ant-steps-item:nth-child(1) {
+            .ant-steps-item-icon {
+                width: 16px;
+                height: 16px;
+                //margin: 8px 16px 0 0;
+                .ant-steps-icon {
+                    .ant-steps-icon-dot {
+                        margin-left: 0;
+                        border: 3px solid #ccefff;
+                    }
+                    .ant-steps-icon-dot::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}

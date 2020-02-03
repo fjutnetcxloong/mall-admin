@@ -1,0 +1,391 @@
+/* 全局样式设置 */
+
+@import "~style";
+@import "~reboot";
+
+// html,
+// body,
+#root {
+  height: 100%;
+  min-width: 1200px;
+    background: #edf0f2;
+}
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+    background-color: #F2F2F2;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: @bule;
+}
+/*滚动条的上下两端的按钮*/
+.scrollbar::-webkit-scrollbar-button{
+  color: @dark-gray;
+  background-color: @dark-gray;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+//自定义常用样式
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.hide{
+  display: none!important;
+}
+.show{
+  display: inherit;
+}
+.ui-mask {
+  filter: Alpha(Opacity=70);
+  opacity: 0.7;
+  background: #000000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  left: 0;
+  top: 0
+}
+
+// 多行省略
+.multi-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box; /* Firefox */
+  display: -webkit-box; /* Safari and Chrome */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+body{
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-right);
+}
+
+.app-main{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // overflow-x: hidden;
+  background: #f0f0f0;
+}
+
+
+.table-reset{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+
+// 解决 Unable to preventDefault inside passive event listener due to target being treated as passive.
+.am-modal-wrap { touch-action: manipulation; }
+@font-face {
+    font-family: 'iconfont';  /* project id 1225440 */
+    src: url('../assets/fonts/iconfont.eot');
+    src: url('../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/iconfont.woff2') format('woff2'),
+    url('../assets/fonts/iconfont.woff') format('woff'),
+    url('../assets/fonts/iconfont.ttf') format('truetype'),
+    url('../assets/fonts/iconfont.svg#iconfont') format('svg');
+  }
+.icon {
+    font-family: 'iconfont';
+    display: inline-block;
+}
+//全局内容内边距
+.page {
+    padding: 0 24px;
+    background-color: #edf0f2;
+    color: @dark-dark;
+}
+.ant-table-placeholder{
+  z-index: 0 !important;
+}
+.basic-layout-content {
+  flex: 1;
+}
+// iframe{
+//   body{
+//     background:rgba(0,0,0,0.5) !important;
+//   }
+// }
+
+.login-form {
+    background: @white;
+    padding: 0;
+    border-radius:4px;
+    .ant-form-item-control-wrapper{
+        display: block !important;
+    }
+    .ant-form-item-label{
+        line-height: 32px;
+    }
+    .edit-btn{
+        width: 240px;
+        margin-top: 50px;
+        // margin-right: 240px;
+    }
+    .edit-btn-box{
+        text-align: center !important;
+        padding-bottom: 50px;
+
+    }
+    .people-info{
+        .ant-btn{
+            margin-left: 25%;
+        }
+    }
+    .information {
+        .avatar-box {
+            .ant-form-item-control {
+                .ant-form-item-children {
+                    .ant-row {
+                        width: 270px;
+                        margin-right: 32px;
+                        .ant-upload, .avatar-uploader {
+                            width: 100%;
+                            .ant-upload-select-picture-card {
+                                height: 160px;
+                            }
+                        }
+                        .ant-col, .ant-form-item-control, .ant-form-item-children {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .period {
+            //display: flex;
+            .ant-form-item-control-wrapper {
+                display: flex;
+                .ant-radio-wrapper {
+                    margin-left: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    .license {
+        .pictrue {
+            .ant-form-item-control-wrapper {
+                display: flex;
+                .ant-form-item-children {
+                    .ant-upload-picture-card-wrapper {
+                        .ant-upload {
+                            width: 208px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .effective {
+            margin-left: 24px;;
+        }
+    }
+    .evidentiary-material {
+        .pictrue {
+            .ant-form-item-control-wrapper {
+                .ant-form-item-control {
+                    text-align: left;
+                    //width: 100%;
+                }
+            }
+        }
+        .avatar-uploader {
+            .ant-upload {
+                width: 270px;
+                height: 184px;
+            }
+        }
+    }
+
+    //最大照片200k提示样式
+    .pic-title {
+        text-align: left;
+        font-size: @font-size-14;
+        color: @gray;
+        cursor: pointer;
+        span {
+            margin-left: 23px;
+            color: #008BCC;
+        }
+    }
+    //按钮公用样式
+    .license-button {
+        text-align: center;
+        display: block;
+    }
+}
+//全局提示样式
+.ant-message{
+    top: 50% !important;
+    transform:translate(0,-50%)
+}
+//协议内容空格保留
+.content-composing {
+    white-space: pre-wrap;
+}
+
+//全局按钮去除边框和投影
+.ant-btn{
+    border: 0;
+    box-shadow: none;
+}
+
+body .ant-modal-footer {
+    border-top: 0;
+    .ant-btn:nth-child(1){
+        .zz-btn-short();
+    }
+    .ant-btn:nth-child(2){
+        width: 64px;
+    }
+}
+
+.ant-form-item-label {
+    margin-bottom: auto;
+}
+
+//查看示例样式
+.business-license {
+    width: 616px;
+    height: 675px;
+}
+.look-sample {
+    width: 616px;
+    height: 420px;
+}
+
+//无数据时去掉边框
+.ant-table-empty .ant-table-placeholder{
+    border: 0;
+}
+
+.two-headline, .headline-left, .headline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.ant-btn-link{
+    color: @ginger-gray;
+}
+
+//下拉框层级
+.ant-select-dropdown{
+    z-index: 0 !important;
+}
+//气泡确认框层级
+.ant-popover{
+    z-index: 0 !important;
+}
+//级联选择框层级
+.ant-cascader-menus.ant-cascader-menus-placement-bottomLeft{
+    z-index: @z-index-level3;
+}
+//日期选择框层级
+.ant-calendar-picker-container{
+    z-index: 0 !important;
+}
+//高亮按钮
+.button-highlight {
+    background: @white!important;
+    color: @red!important;
+    border: 1px solid @red!important;
+}
+//预览图片设置
+.model-preview-img{
+    width: 100%;
+}
+//职工查看二维码设置
+.employee-preview{
+    text-align: center;
+    .ant-modal-content{
+        .ant-modal-body{
+            padding: 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+//带表格的弹出框样式
+.apply-for-info{
+    .ant-row.ant-form-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ant-col.ant-form-item-label{
+            width: 24%;
+            text-align: right;
+        }
+        .ant-col.ant-form-item-control-wrapper{
+            width: 50%;
+        }
+    }
+}
+//量子类
+.fs14{
+    font-size: 14px;
+}
+.mgl8{
+    margin-left: 8px;
+}
+.mgb8{
+    margin-bottom: 8px;
+}
+.br4{
+    border-radius: 4px;
+}
+.mt70{
+    margin-top: 70px;
+}

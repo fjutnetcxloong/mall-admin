@@ -1,0 +1,245 @@
+@import "~style";
+.template-compile-three {
+    p{
+        margin-bottom: 0;
+    }
+    position: relative;
+    // .my-carousel{
+    //     .ant-carousel .slick-slide {
+    //         text-align: center;
+    //         height: 496px;
+    //         line-height: 496px;
+    //     }
+    // }
+    //静态图片
+    .static {
+        margin-right: 24px;
+        div {
+            margin-bottom: 12px;
+            span:nth-child(1) {
+                font-size: @font-size-16;
+                color: @dark-dark;
+                margin-right: 23px;
+            }
+            span:nth-child(2) {
+                font-size: @font-size-12;
+                color: @gray;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    //编辑面板
+    .compile-box {
+        margin-right: 48px;
+        //标题
+        .compile {
+            margin-bottom: 12px;
+            font-size: @font-size-16;
+            color: @dark-dark;
+        }
+        //搜索栏背景
+        .head {
+            width: 100%;
+            height: 110px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 110px;
+            }
+            .head-base {
+                width: 100%;
+                height: 110px;
+                position: absolute;
+                top: 0;
+                background-size: 100% 100% !important;
+                background: url("../../../../../../assets/images/fake.png") no-repeat center;
+            }
+        }
+        //banner图
+        .ant-carousel,.banner-img {
+            width: 372px;
+            min-height: 248px;
+            img{
+                width:100%;		
+                display:block;
+            }
+        }
+        .ant-carousel .slick-dots li button{
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            background-color: #0c0c0c;
+        }
+        .ant-carousel .slick-dots li.slick-active button{
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: #c5d1e5;
+        }
+        .ant-carousel .slick-dots-bottom{
+            bottom: -10px;
+            right: 1rem;
+        }
+        .ant-carousel .slick-dots{
+            width: unset;
+        }
+        //标题栏
+        .title-bar {
+            color: @dark-dark;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: @font-size-16;
+            margin-top: 20px;
+            .products:before ,.products:after {
+                content: '';
+                display: inline-block;
+                border: 0.5px solid #FF6633;
+                width: 30%;
+                vertical-align: super;
+            }
+            .products:before {
+                margin-right: 15px;
+            }
+            .products:after {
+                margin-left: 15px;
+            }
+            div:nth-child(2) {
+                margin-top: 5px;
+                font-size: @font-size-12;
+                color:@gray;
+            }
+        }
+        //热门商品
+        .hot-box {
+            padding: 0 20px;
+            display: flex;
+            margin-bottom: 24px;
+            .hot {
+                padding: 0 10px;
+                flex: 0.5;
+                .commodity-img {
+                    width: 100%;
+                    height: 200px;
+                    margin-bottom: 5px;
+                    border: 1px solid @to-light-gray;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .sell-box {
+            display: flex;
+            padding: 10px 9px;
+            margin-bottom: 16px;
+            background: #FF6633;
+            .sell {
+                padding: 0 9px;
+                flex: 0.5;  
+               div:nth-child(1) {
+                   border: 1px solid @to-light-gray;
+                   width: 100%;
+                   height: 220px;
+                   margin-bottom: 5px;
+                   img {
+                       width: 100%;
+                       height: 100%;
+                   }
+               }
+            }
+            .sell:nth-child(2){
+                div:nth-child(1) {
+                    border: 1px solid @to-light-gray;
+                    width: 100%;
+                    height: 164px;
+                    margin-bottom: 5px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .sell-right {
+                padding: 0 21px 0 9px;
+                flex: 0.5;
+                div:nth-child(1) {
+                    border: 1px solid @to-light-gray;
+                    margin-bottom: 5px;
+                    width: 100%;
+                    height: 122px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .sell-one-box {
+            display: flex;
+            padding: 0 12px;
+            margin-bottom: 16px;
+            .sell-one {
+                flex: 0.5;
+                padding: 0 10px;
+                div:nth-child(1) {
+                    width: 100%;
+                    height: 220px;
+                    margin-bottom: 5px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .sell-two-box {
+            display: flex;
+            padding: 0 12px;
+            flex-wrap: wrap;
+            .sell-two {
+                width: 50%;
+                padding: 0 10px;
+                height: 215px;
+                div:nth-child(1) {
+                    width: 100%;
+                    height: 156px;
+                    margin-bottom: 5px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        //公用标题-价格
+        .headline-price {
+            .headline {
+                font-size: @font-size-14;
+                margin-bottom: 3px;
+            }
+            .price {
+                span:nth-child(1) {
+                    color: @dark-dark;
+                    font-size: @font-size-10;
+                    margin-right: 10px;
+
+                    span {
+                        font-size: @font-size-14;
+                    }
+                }
+                span:nth-child(2) {
+                    font-size: @font-size-10;
+                    color: @gray;
+                    text-decoration:line-through
+                }
+            }
+        }
+    }
+}

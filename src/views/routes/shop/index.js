@@ -1,0 +1,10 @@
+export const Info = React.lazy(() => import(/* webpackChunkName: 'shop'*/ './pages/Info'));
+export const Certification = React.lazy(() => import(/* webpackChunkName: 'shop'*/ './pages/AuthorPage'));
+export const Template = React.lazy(() => import(/* webpackChunkName: 'shop'*/ './pages/Template'));
+export const Employee = React.lazy(() => import(/* webpackChunkName: 'shop'*/ './pages/Employee'));
+export const Password = React.lazy(() => import(/* webpackChunkName: 'shop'*/ './pages/Password'));
+export const TemplateCompileOne = React.lazy(() => import(/* webpackChunkName: 'shopTemp'*/ './pages/template-compile/template-compile-one/TemplateCompileOne'));
+export const TemplateCompileTwo = React.lazy(() => import(/* webpackChunkName: 'shopTemp'*/ './pages/template-compile/temolate-compile-two/TemplateCompileTwo'));
+export const TemplateCompileThree = React.lazy(() => import(/* webpackChunkName: 'shopTemp'*/ './pages/template-compile/temolate-compile-three/TemplateCompileThree'));
+export const TemplateCompileFour = React.lazy(() => import(/* webpackChunkName: 'shopTemp'*/ './pages/template-compile/temolate-compile-four/TemplateCompileFour'));
+export const TemplateCompileFive = React.lazy(() => import(/* webpackChunkName: 'shopTemp'*/ './pages/template-compile/temolate-compile-five/TemplateCompileFive'));

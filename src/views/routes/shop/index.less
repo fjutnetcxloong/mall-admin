@@ -1,0 +1,206 @@
+@import "~style";
+
+//申请员工数表单样式
+.ant-input-number.apply-employee{
+    width: 300px;
+}
+.shop-setting {
+    .waring-text{
+        color:@crimson-red;
+        font-size: @font-size-14;
+    }
+    //灰色分割线
+    .gray-line{
+        // height: 1px;
+        // background:#e1e3e6;
+        // margin: 70px auto;
+        .gray-line-border();
+        margin: 70px auto;
+        width: 100%;
+    }
+    .info-show-container .info-modify-inner .info-show-inner .info-show-inner-container .info-show-inner-box div > span:nth-child(1){
+        color: @dark-dark;
+    }
+    .comfirm-modify{
+        z-index: 5500;
+        margin-top: 2rem;
+        background:rgba(67,67,67,.4);
+        line-height: 94px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 200px;
+        right: 0;
+        text-align: center;
+        .ant-btn{
+            width: 128px;
+            left: -100px;
+        }
+        .ant-btn-default{
+            // color: @dark-gray;
+            margin-right: 25px;
+            .zz-btn-weakless()
+        }
+    }
+    
+    .ant-upload {
+        img{
+            width: 266px;
+            height: 160px;
+        }
+        border: none !important;
+    }
+    
+    //店铺模板-预览图样式
+    .preview {
+        width: fit-content!important;
+        .ant-modal-body {
+            padding: 0;
+            .icon-cross {
+                width: 48px;
+                height: 48px;
+                position: fixed;
+                border-radius: 50%;
+                background: #434343;
+                right: 320px;
+                top: 80px;
+            }
+            .icon-cross:before {
+                content: '\E65d';
+                font-size: @font-size-24;
+                color: @white;
+                line-height: 48px;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+    
+    
+    .cer-message{
+        text-align: left;
+        padding-bottom: 80px;
+        .desc{
+            color:@gray;
+            font-size: @font-size-12;
+            line-height: 96px;
+            span{
+                color:#FF8900 !important;
+            }
+        }
+        .ant-btn{
+            width: 240px;
+        }
+
+        .edit-btn{
+            margin-right: 30px;
+            color:@bule;
+            border-color: @bule;
+        }
+
+    }
+    .cer-box{
+        margin-bottom: 60px;
+        .ant-btn{
+            width: 240px;
+        }
+        .ant-btn:nth-child(1) {
+            border: 1px solid @bule;
+            margin-right: 30px;
+            color:@bule;
+        }
+    }
+    .login-form{
+        .ant-form-item{
+            display: flex;
+            align-items: flex-start;
+        }
+        .avatar-box{
+            .ant-form-item-control-wrapper{
+                .ant-form-item-children{
+                    .ant-form-item{
+                        margin-right: 32px;
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+    .apply-emplpyees{
+        .ant-input-number{
+            width: 320px;
+        }
+    }
+    .ant-modal-footer{
+        border: 0;
+    }
+    .compile-box{
+        width: 372px;
+    }
+    .people-info{
+        .line-32{
+            p{
+                line-height: 32px;
+            }
+        }
+        .ant-form-item-children{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.no-edit-model {//模板信息未填写时，加个红色边框
+    border:2px solid red;
+}
+
+.model-must-save-loading{ //保存模板loading样式
+    width:0;
+    margin:30px auto 0;
+}
+//模板编辑下拉菜单
+// .ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft.ant-select-dropdown-hidden{
+//     .ant-select-dropdown-menu.ant-select-dropdown-menu-root{
+//         max-height: 210px;
+//     }
+// }
+//模板顶部容器公用
+.back {
+    padding: 30px 30px 100px;
+    background: @white;
+    box-shadow:0 0 40px 0 rgba(204,204,204,0.1), 0 0 10px 0 rgba(204,204,204,0.2);
+    border-radius:4px;
+    margin-bottom: 80px;
+}
+//底部按钮公用样式
+.edit-template-button {
+    z-index: @z-index-level4;
+    padding: 24px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 200px;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    .ant-btn {
+        .zz-btn-weakless();
+        margin-right: 25px;
+        left: -100px;
+    }
+    .ant-btn:nth-child(1) {
+        background: @white;
+        // color: @dark-dark;
+        margin-right: 25px;
+    }
+    .ant-btn:nth-child(2) {
+        // color: @dark-dark;
+        background-color: @white;
+    }
+    .ant-btn:nth-child(3) {
+        color: @white;
+        background-color: @bule;
+        border: none;
+        margin-right: 0;
+    }
+}

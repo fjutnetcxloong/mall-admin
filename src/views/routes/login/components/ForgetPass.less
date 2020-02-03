@@ -1,0 +1,226 @@
+@import "~style";
+.step-container{
+    // height: 200px;
+    padding: 20px 228px;
+    .icon-closeEys:before{
+        content:'\E686';
+    }
+    .icon-openEys:before{
+        content:'\e677';
+    }
+    .step{
+        height: 88px;
+        .step-info{
+            .icon-user:before{
+                content: '\e65c';
+                color: @red;
+                font-size: @font-size-30;
+            }
+            .icon-reset:before{
+                content:'\E681';
+                font-size: @font-size-30;
+            }
+            .icon-finished:before{
+                content: '\e689';
+                font-size: @font-size-30;
+            }
+        }
+        .ant-steps-item-icon{
+            width: 88px !important;
+            height: 88px;
+            border-radius: 50%;
+            text-align: center;
+            // background: #E6E6E6;
+            line-height: 88px;
+            background-color: #E6E6E6;
+        }
+        .ant-steps-item-finished{
+            .ant-steps-item-icon{
+                border: 1px solid @red;
+                background-color: @white;
+                .ant-steps-icon{
+                    color: @red;
+                }
+            }
+            .ant-steps-item-tail::after{
+                border-color: @red;
+            }
+        }
+        .ant-steps-item-content{
+            padding-left: 35px;
+            color: @dark-gray;
+            .ant-steps-item-title{
+                font-size: @font-size-18 !important;
+                width: 100px;
+            }
+        }
+        .ant-steps-item-tail{
+            padding: 2rem 1.5rem;
+            margin-left: 6.1875rem;
+            width: 85%;
+        }
+        .ant-steps-item-tail::after{
+            // border: 2px dashed @red;
+            border: 2px solid #E6E6E6;
+            width: 80%;
+            margin-left: 10%;
+            border-radius: 4px;
+        }
+    }
+    .form-info{
+        .ant-btn,.ant-input{
+            height: 40px;
+        }
+        margin-top: 60px;
+        padding: 0 150px;
+        .ant-form-item{
+            display: flex;
+        }
+        .ant-form-item-control-wrapper{
+            flex: 1;
+        }
+        // .ant-btn-primary{
+        //     width: 100%;
+        //     background: @red;
+        //     border-color: @red;
+        // }
+        .code{
+            // padding-left: 15px;
+            .ant-form-item-label{
+                width: 80px;
+            }
+            .get-code{
+                text-align: right;
+                .ant-btn{
+                    background: #E6E6E6;
+                    color: @font-dark;
+                    font-size: @font-size-14;
+                    border: none;
+                    margin-left: 35px;
+                }
+            }
+        }
+        .next {
+            display: flex;
+            .ant-col:nth-child(1) {
+                width: 80px;
+            }
+            .fogot-btn{
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                .ant-btn:first-child{
+                    border: 1px solid @red;
+                    color: @red;
+                }
+                .ant-btn{
+                    width: 148px;
+                    font-size: @font-size-18;
+                    font-weight: 500;
+                    height: 40px;
+                }
+                .red-color{
+                    background: @red;
+                    border: none;
+                }
+            }
+        }
+        .login-form{
+            margin-top: 30px;
+            .ant-form-item-label {
+                line-height: 40px;
+            }
+            .reset-button {
+                .ant-form-item-children {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    .ant-btn {
+                        width: 48%;
+                    }
+                    .ant-btn:nth-child(1) {
+                        border: 1px solid @red;
+                        color: @red;
+                    }
+                    .ant-btn:nth-child(2) {
+                        background: @red;
+                    }
+                    [ant-click-animating-without-extra-node='true']::after {
+                       opacity: 0;
+                    }
+                }
+            }
+            .reminder {
+                .ant-form-item-control {
+                    margin: -22px 0 -5px 23px;
+                    font-size: @font-size-12;
+                    color: @gray;
+                }
+            }
+        }
+    }
+    .success{
+        .success-box{
+            text-align: center;
+            padding-left: 40px;
+            .icon-success:before{
+                content: '\e631';
+                font-size: 100px;
+                color: @red;
+                // text-align: center;
+                margin: 0 auto;
+            }
+            p{
+                font-size: @font-size-28;
+                color: @dark-gray;
+            }
+            .time-out{
+                display: block;
+                margin: auto;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: #E6E6E6;
+                line-height: 32px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+    .large-btn{
+        width: 100%;
+        .ant-btn{
+            width: 100%;
+            background: @red;
+            border: none;
+        }
+    }
+}
+.modal-user{
+    div{
+      display: flex !important;
+      padding-top: 10px;
+     p{
+         margin-left: 10px !important;
+         line-height: 60px !important;
+         flex: 1;
+         font-size: @font-size-16;
+         color:@dark-dark;
+         cursor: pointer;
+     }
+
+    }
+    .active-user{
+        P{
+            color:@bule;
+        }
+        p::after{
+            font-family: "iconfont";
+            content: '\e662';
+            position: absolute;
+            right: 50px;
+        }
+    }
+
+ }

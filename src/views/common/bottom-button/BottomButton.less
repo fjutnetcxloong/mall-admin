@@ -1,0 +1,27 @@
+@import "~style";
+
+.public-button {
+    padding: 24px 0;
+    text-align: center;
+    background: #434343;
+    position: fixed;
+    width: 100%;
+    left: 200px;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    .ant-btn {
+        width: 128px;
+        left: -100px;
+    }
+    .ant-btn:nth-child(1) {
+        background: @white;
+        // color: @dark-dark;
+        margin-right: 25px;
+        .zz-btn-weakless();
+    }
+    .ant-btn:nth-child(2) {
+        background: @bule;
+        color: @white;
+        border: 0;
+    }
+}

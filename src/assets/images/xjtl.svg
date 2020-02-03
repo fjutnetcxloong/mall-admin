@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="65px" viewBox="0 0 66 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 37</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.91550908%" y1="0%" x2="64.5283683%" y2="74.0458504%" id="linearGradient-1">
+            <stop stop-color="#3CC5FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0_首页改版_v1" transform="translate(-430.000000, -352.000000)">
+            <g id="Group-37" transform="translate(430.000000, 352.000000)">
+                <g id="Group-20">
+                    <g id="Group-31">
+                        <ellipse id="Oval-3" fill="url(#linearGradient-1)" cx="32.245098" cy="32.2508844" rx="32.245098" ry="32.2508844"></ellipse>
+                        <path d="M62.2843137,32.1475659 C62.2843137,27.8485287 61.3846338,23.7596607 59.7633153,20.0590351 C55.1053163,9.42724986 44.4909445,2 32.1421569,2 C15.4951033,2 2,15.497525 2,32.1475659 C2,48.7976068 15.4951033,62.2951318 32.1421569,62.2951318 C40.9108368,62.2951318 48.8049901,58.5501663 54.3129938,52.5721294" id="Oval-4" stroke="#3095F9" stroke-width="4"></path>
+                    </g>
+                </g>
+                <path d="M55,32.5 L64,32.5" id="Path-21" stroke="#F5A623" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M55,42.5 L64,42.5" id="Path-21" stroke="#F5A623" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M54,52.5 L64,52.5" id="Path-21" stroke="#F5A623" stroke-width="4" stroke-linecap="round"></path>
+                <g id="Group-25" transform="translate(23.000000, 20.000000)" stroke="#3095F9" stroke-linecap="round" stroke-width="3.5">
+                    <polyline id="Path-20" points="2 4.4408921e-16 10 6 18 4.4408921e-16"></polyline>
+                    <path d="M10,9 L10,25" id="Path-22"></path>
+                    <path d="M2,7 L19,7" id="Path-21"></path>
+                    <path d="M0,16 L20,16" id="Path-21"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

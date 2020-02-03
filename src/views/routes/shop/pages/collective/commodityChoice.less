@@ -1,0 +1,105 @@
+@import "~style";
+   
+.model-product-description {
+    border:1px solid @bule;
+    box-shadow:0 5px 14px 1px rgba(0,174,255,0.2);
+    border-radius:4px;
+    margin-top: 36px;
+    position: absolute;
+    right:0;
+    max-height:600px;
+    overflow-y: auto;
+    width: 100%;
+    background-color: @white;
+    .hide-choise{
+        float: right;
+        width: 20px;
+        height: 20px;
+        background: #00aeff;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 4px;
+        margin-top: 4px;
+        color:#fff;
+        cursor: pointer;
+    }
+    //标题
+    .headline {
+        padding: 20px 24px;
+        color: @dark-dark;
+        border-bottom: 1px solid #E6E6E6;
+    }
+    //上传框
+    .uploading {
+        padding: 24px;
+        .require {
+            margin-bottom: 13px;
+            span:nth-child(1) {
+                font-size: @font-size-14;
+                color: @dark-gray;
+                margin-right: 11px;
+                width: 60px;
+                vertical-align: text-top;
+                display: inline-block;
+                text-align: right;
+            }
+            span:nth-child(2) {
+                font-size: @font-size-12;
+                color: @place-color;
+            }
+        }
+        .upload-box {
+            padding: 0 6px 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #E6E6E6;
+            .avatar-uploader {
+                width: 100%;
+                margin-bottom: 14px;
+                .ant-upload {
+                    width: 100%;
+                    height: 80px;
+                    margin: 0;
+                }
+            }
+            .import-headline {
+                margin-bottom: 12px;
+                display: flex;
+                div {
+                    text-align: right;
+                    width: 40%;
+                    line-height: 32px;
+                    font-size: @font-size-14;
+                    color: @dark-gray;
+                    margin-right: 11px;
+                }
+            }
+            .change {
+                display: flex;
+                //padding: 0 6px 24px;
+                &>span{
+                    line-height: 32px;
+                }
+                .ant-btn {
+                    .zz-btn-normal();
+                    width: 64px;
+                    margin-right: 8px;
+                }
+                .ant-select {
+                    // flex: 1;
+                    width: 100%;
+                }
+                &>div:nth-child(1){
+                    width: 40%;
+                    margin-right: 11px;
+                    text-align: right;
+                    line-height: 32px;
+                }
+            }
+        }
+        .upload-box:last-child {
+            border-bottom: none!important;
+        }
+    }
+
+}

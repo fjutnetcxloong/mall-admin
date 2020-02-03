@@ -1,0 +1,55 @@
+@import "~style";
+
+.individual{
+    .open-shop-coder{
+        .ant-form-item-label{
+            line-height: 32px !important;
+        }
+    }
+    .ant-upload-select-picture-card{
+        width: 270px;
+        height: 184px;
+    }
+    .pic-title{
+        font-size: @font-size-14;
+        color:@gray;
+        span{
+            color: #008BCC;
+            margin-left: 23px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+    .info-title{
+        font-size: @font-size-14;
+        color: @place-color;
+        text-align: justify;
+        text-indent: 140px;
+    }
+    .show-img{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: -40px;
+    }
+    .pic-title:hover{
+        .show-img{
+            display: block;
+        }
+    }
+    .pictrue{
+        .ant-form-item-control-wrapper{
+            .my-upload{
+                .ant-upload{
+                    background: #fafafa;
+                    height: 184px;
+                    .upload-button1{
+                        margin: 50px;
+                        background: unset;
+                        color: #8b8b8b;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,264 @@
+@import "~style";
+
+.area-selection-hx {
+    .shade {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: @z-index-level4;
+        height: 100%;
+        background-color: rgba(0,0,0,0.45);
+    }
+    .content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        width: 1080px;
+        background: @white;
+        z-index: @z-index-level4;
+        border-radius: 4px;
+        .upper {
+            display: flex;
+            justify-content: space-between;
+            padding: 9px 24px;
+            line-height: 32px;
+            border-bottom: 1px solid #E6E6E6;
+            .upper-text{
+                font-weight: Normal;
+            }
+            .icon:before {
+                content: '\E65d';
+                font-size: @font-size-24;
+                cursor: pointer;
+            }
+        }
+        .content-wrap{
+            width: 100%;
+            padding: 24px 40px;
+            box-sizing: border-box;
+            .content-seach{
+                width: 420px;
+                height: 32px;
+                margin: 16px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .seach{
+                    margin-left: 6px;
+                    display: flex;
+                    align-items: center;
+                    .ant-input{
+                        border-radius: 4px 0 0 4px;
+                    }
+                }
+            }
+            .order-list{
+                margin-top: 40px;
+                width: 100%;
+                max-height: 380px;
+                .order-status{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    .identifier{
+                        margin-right: 50px;
+                    }
+                }
+                .order-detail{
+                    width: 100%;
+                    margin-top: 20px;
+                    max-height: 200px;
+                    overflow-y: scroll;
+                    .detail-top{
+                        width: 100%;
+                        height: 56px;
+                        background: @light-green;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        .row-list{
+                            width: 100%;
+                            .row-list-one{
+                                text-align: left;
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                }
+                .order-btn-bottom{
+                    width: 100%;
+                    margin-top: 40px;
+                    text-align: center;
+                    .btn-after{
+                        .zz-btn-short();
+                        font-size: 10px;
+                        height: 24px;
+                        background: @red-wrap;
+                        color: @white;
+                        margin-top: 8px;
+                        width: 90px;
+                    }
+                }
+            }
+            
+            .list-bottom-root{
+                width: 100%;
+                height: 27px;
+                border-bottom: @list-border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:0 8px;
+                box-sizing: border-box;
+                margin:20px 0;
+                div{
+                    text-align: left;
+                }
+            }
+            .order-prompt-table{
+                table{
+                    th,td{
+                        width: 13%;
+                        text-align: center;
+                    }
+                    .first-column{
+                        width: 22%;
+                        text-align: left;
+                        .goods{
+                            display: flex;
+                            justify-content: flex-start;
+                            .goods-title{
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    //半边有幅度的按钮
+    .of-sth-btn{
+        float: right;
+        width: 64px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: @bule;
+        color: @white;
+        cursor: pointer;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+//列表-可循环
+.Tabs-frame-list{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 24px;
+    .list-top{
+        width: 100%;
+        height: 40px;
+        padding:0 11px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        background: @light-green;
+        font-size: @font-size-14;
+        .list-top-row{
+            width: 100%;
+            .list-right{
+                text-align: right;
+            }
+        }
+    }
+    .list-bottom{
+        width: 100%;
+        background: @white;
+        .list-touch{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .orderList{
+                width: 100%;
+                .list-touch-bottom:last-child{
+                    border-right: @list-border;
+                }
+            }
+            .list-touch-bottom{
+                height: 131.5px;
+                border-right: @list-border;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-size: @font-size-14;
+                border-bottom: @list-border;
+                color: @dark-gray;
+                div{
+                    line-height: 17px;
+                }
+                .phone{
+                    margin-bottom: 6px;
+                }
+                .order-status{
+                    width: 100%;
+                    text-align: center;
+                    .status-remind{
+                        margin-top: 10px;
+                        color: @pink-yellow;
+                        font-size: @font-size-12;
+                    }
+                }
+                .order-text{
+                    color: @red-wrap;
+                }
+                .goods-wrap{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .goods{
+                        height: 70px;
+                        .goods-img{
+                            width: 70px;
+                            height: 70px;
+                            float: left;
+                        }
+                        .goods-title{
+                            float: left;
+                            height: 96px;
+                            margin-left: 12px;
+                            .goods-head{
+                                width: 80px;
+                                .TextareaOverflow();
+                                font-size: @font-size-14;
+                                font-weight: @font-weight-bold;
+                            }
+                            .goods-specs{
+                                margin-top: 8px;
+                                font-size: @font-size-12;
+                                color: @gray;
+                                .specs{
+                                    margin-right: 10px;
+                                }
+                            }
+                            .goods-num{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-touch-bottom:last-child{
+                border-right: 0;
+            }
+        }
+    }
+}

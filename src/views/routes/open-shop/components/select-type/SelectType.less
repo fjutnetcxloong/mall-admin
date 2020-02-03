@@ -1,0 +1,46 @@
+@import "~style";
+
+.select-type {
+    padding: 60px;
+    .ant-typography{
+        letter-spacing:5px;
+    }
+    .type-heart{
+        width: 640px;
+        height: 368px;
+        margin: 70px auto;
+        padding: 32px 32px 39px 61px;
+        display: flex;
+        justify-content: space-between;
+        background: @white;
+        box-shadow: 0 8px 14px 1px rgba(204,204,204,0.5);
+        border-radius:10px;
+
+        .type-left{
+            background: url("../../../../../assets//images/invide.png") no-repeat center center;
+            background-size: 221px 295px;
+            margin-right: 40px;
+        }
+        .type-right{
+            display: flex;
+            flex-direction: column;
+            //text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            .ant-btn{
+                width: 258px;
+                height: 40px;
+                border-radius: 20px;
+                box-shadow:0 5px 10px 1px rgba(0,174,255,0.2);
+            }
+         /*   .ant-btn:nth-child(1) {
+                margin: 75px 0 65px 0;
+            }*/
+            .ant-btn:nth-child(3) {
+                border:1px solid @bule;
+                box-shadow:0 5px 10px 1px rgba(0,174,255,0.2);
+                color: @bule;
+            }
+        }
+    }
+}

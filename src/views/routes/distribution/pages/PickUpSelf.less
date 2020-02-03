@@ -1,0 +1,166 @@
+@import "~style";
+.pickup-self{
+    background: #edf0f2;
+    padding: 0 24px;
+    .editBtn{
+        color: @ginger-gray;
+        font-size: @font-size-14;
+        cursor: pointer;
+    }
+    .one-row{
+       background: @white;
+        //height: 158px;
+        border-radius: 4px;
+        .one-one-col{
+            height: 56px;
+            border-bottom: 1px solid #E6E6E6;
+            .buyer-tip{
+                margin-left: 24px;
+                color: @dark-dark;
+                font: 400  Normal 16px/56px "SourceHanSansCN-Normal";
+            }
+           .switch{
+               float: right;
+               margin-right: 24px;
+               line-height: 56px;
+           }
+        }
+        .one-two-col{
+            height: 101px;
+            .one-span{
+                margin-left: 23px;
+                margin-top: 23px;
+                color:@dark-gray;
+                font-size: @font-size-14;
+            }
+            .two-span{
+                margin-left: 22px;
+                margin-top: 23px;
+                color: @ginger-gray;
+                font-size: @font-size-14;
+                cursor: pointer;
+            }
+
+        }
+    }
+    .two-row{
+        padding: 24px;
+        background:  @white;
+        margin-top: 24px;
+        //height: 620px;
+        border-radius: 4px;
+        .two-two-col{
+            text-align: center;
+            padding-top: 10px;
+            .add{
+                border-radius:4px
+            }
+        }
+        .ant-table-body {
+            .ant-table-thead, .ant-table-tbody {
+                tr {
+                    th, td {
+                        border-bottom: 1px solid #e8e8e8;
+                        border-right: 1px solid #e8e8e8;
+                        text-align: center;
+                    }
+                    th:last-child, td:last-child {
+                        border-right: none;
+                    }
+                    th{
+                        background: #F7FAFA;
+                        border-bottom: none;
+                    }
+                }
+            }
+            .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+                flex: 1px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                //border-bottom: 1px solid #e8e8e8!important;
+            }
+            .ant-table-thead > tr, .ant-table-tbody > tr {
+                display: flex;
+            }
+        }
+    }
+}
+.showRule-model{
+    .ant-steps-navigation .ant-steps-item.ant-steps-item-active::before{
+        width: 0;
+    }
+    .ant-steps-item-tail::after{
+        width: 0;
+    }
+    .ant-steps-navigation .ant-steps-item::after{
+        top: 16%;
+        left: 86%;
+        width: 10px;
+        height: 10px;
+        border: 1px solid @bule;
+        border-bottom: none;
+        border-left: none;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon{
+        color: @bule;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon{
+        border-color: @bule
+    }
+    .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title{
+        color: black;
+        font-size: @font-size-12;
+    }
+    .ant-steps-small .ant-steps-item-description{
+        font-size: @font-size-10;
+        line-height: 20px;
+    }
+}
+.pickup-edit{
+    background: #edf0f2;
+    padding: 0 24px;
+    .one-row{
+        background: @white;
+        //height: 57px;
+        border-radius: 4px 4px 0 0;
+        .one-one-col{
+            height: 56px;
+            border-bottom: 1px solid #E6E6E6;
+        }
+        .tip{
+            color: @dark-dark;
+            font-size: @font-size-16;
+            line-height: 56px;
+            padding-left: 24px;
+
+        }
+    }
+    .two-row{
+        background: @white;
+        padding-bottom: 100px;
+        //height: 781px;
+        .edit-form{
+            width: 600px;
+            padding-top: 17px;
+            .ant-col-4{
+                margin-left: 38px;
+            }
+            .ant-form-item {
+                margin-bottom: 14px;
+            }
+            .ant-form-item-control-wrapper{
+                    width: 280px;
+            }
+            .phone{
+            margin-top: 38px;
+            }
+        }
+    }
+.map{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000000;
+    margin-left: 140px;
+}
+}

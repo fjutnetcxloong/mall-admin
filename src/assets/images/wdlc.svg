@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="56px" viewBox="0 0 64 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>wdlc</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-21.2890625%" y1="-19.6022727%" x2="75.6770833%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#3CC5FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0_首页改版_v1" transform="translate(-617.000000, -356.000000)">
+            <g id="wdlc" transform="translate(617.000000, 358.000000)">
+                <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="2" y="18" width="60" height="33"></rect>
+                <g id="Group-28" stroke-width="4">
+                    <path d="M2,18 L2,11.8466415 C2,9.72220005 3.79211879,8 6.00280936,8 L19.4624513,8 M49.1844834,8 L53.9971906,8 C56.2078812,8 58,9.72220005 58,11.8466415 L58,16.3375939" id="Path-8" stroke="#3095F9"></path>
+                    <polyline id="Path-9" stroke="#F5A623" stroke-linecap="round" stroke-linejoin="round" points="4 16 35.7260244 0 43 16"></polyline>
+                    <polyline id="Path-10" stroke="#F5A623" stroke-linecap="round" stroke-linejoin="round" points="38 3.38058983 44.139873 0 52 16"></polyline>
+                    <path d="M3.4765635,15.6809329 L2,18.0898033 L2,50.0935497 C2,51.1357213 2.88497598,52 4,52 L60,52 C61.115024,52 62,51.1357213 62,50.0935497 L62,18.8887217 C62,17.84655 61.115024,16.9822713 60,16.9822713 L7.87231445,16.9822713 C6.0020034,16.9822713 4.50513101,16.5260134 3.4765635,15.6809329 Z" id="Rectangle-15" stroke="#3095F9"></path>
+                </g>
+                <path d="M60.6837195,29.4199219 L50.4678826,29.4199219 C47.8224171,29.4199219 45.6778435,31.5644954 45.6778435,34.2099609 L45.6778435,34.2099609 C45.6778435,36.8554265 47.8224171,39 50.4678826,39 L62.171875,39" id="Path-11" stroke="#3095F9" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

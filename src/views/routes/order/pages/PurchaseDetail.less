@@ -1,0 +1,310 @@
+@import "~style";
+
+.refund-detail {
+    //头部
+    .Purchase-detail{
+        width: 100%;
+        background: @white;
+        padding: 24px;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+        // 头部
+        .Purchase-top{
+            width: 100%;
+            background: @light-green;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 24px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            font-weight: @font-weight-normal;
+        }
+        //商品详情
+        .Tabs-frame-list{
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 40px;
+            .list-top{
+                font-weight: @font-weight-bold;
+                width: 100%;
+                height: 40px;
+                padding:0 11px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                background: @light-green;
+                font-size: @font-size-14;
+                .list-top-row{
+                    width: 100%;
+                    .ant-col{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .identifier{
+                            justify-content: end;
+                        }
+                    }
+                    .list-right{
+                        text-align: right;
+                    }
+                }
+            }
+            .list-bottom{
+                width: 100%;
+                background: @white;
+                .list-touch{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .orderList{
+                        width: 100%;
+                        .list-touch-bottom:last-child{
+                            border-right: @list-border;
+                        }
+                        .goods-wrap{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            .goods-title{
+                                float: left;
+                                height: 96px;
+                                margin-left: 12px;
+                                .goods-head{
+                                    width: 160px;
+                                    .TextareaOverflow(4);
+                                    font-size: @font-size-14;
+                                    font-weight: @font-weight-bold;
+                                }
+                                .goods-num{
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .list-touch-bottom{
+                        height: 131.5px;
+                        border-right: @list-border;
+                        padding:16px 11px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        font-size: @font-size-14;
+                        border-bottom: @list-border;
+                        color: @dark-gray;
+                        .goods{
+                            height: 96px;
+
+                        }
+                        .goods-specs{
+                            margin-top: 8px;
+                            font-size: @font-size-12;
+                            color: @gray;
+                            .specs{
+                                margin-right: 10px;
+                            }
+                        }
+                        div{
+                            line-height: 17px;
+                        }
+                        .phone{
+                            margin-bottom: 6px;
+                        }
+                        .order-status{
+                            width: 100%;
+                            text-align: center;
+                            .status-remind{
+                                margin-top: 10px;
+                                color: @pink-yellow;
+                                font-size: @font-size-12;
+                            }
+                        }
+                        .order-btn{
+                            width: 100%;
+                            font-size: @font-size-12;
+                            text-align: center;
+                            .order-text{
+                                cursor: pointer;
+                                color: @bule;
+                            }
+                            .btn-detail{
+                                .zz-btn-short();
+                                font-size: @font-size-10;
+                                height: 24px;
+                                background: @bule;
+                                color: @white;
+                                margin-top: 8px;
+                                width: 80px;
+                                border: none;
+                            }
+                            .btn-delete{
+                                .zz-btn-short();
+                                font-size: @font-size-12;
+                                height: 24px;
+                                color: @bule;
+                                background: @white;
+                                border:1px solid @bule;
+                                margin-top: 8px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                    .list-touch-bottom:last-child{
+                        border-right: 0;
+                    }
+                }
+            }
+            .list-bottom-root{
+                width: 100%;
+                height: 27px;
+                border-bottom: @list-border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:0 24px;
+                box-sizing: border-box;
+            }
+        }
+        // 服务单信息
+        .serve-news::after{
+            content: "";
+            display: block;
+            height: 0;
+            clear:both;
+            visibility: hidden;
+        }
+        .goods-img{
+            width: 96px;
+            height: 96px;
+            float: left;
+        }
+        .serve-news{
+            width: 100%;
+            padding:40px 120px 0 120px;
+            box-sizing: border-box;
+            .serve-wrap{
+                color: @dark-gray;
+                width: 100%;
+                border-bottom: @list-border;
+                padding-left: 60px;
+                box-sizing: border-box;
+                div{
+                    margin-bottom: 20px;
+                }
+                .detail-img{
+                    display: flex;
+                    align-items: flex-start;
+                    .goods-img{
+                        width: 120px;
+                        height: 120px;
+                        margin-left: 10px;
+                    }
+                }
+                .skipLook{
+                    color: @ginger-gray;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+            .serve-wrap-bottom{
+                padding-top: 40px;
+            }
+            .serve-news-left{
+                float: left;
+                width: 100px;
+                margin-left: 32px;
+                text-align: right;
+                font-weight: @font-weight-normal;
+                div{
+                    margin-bottom: 35px;
+                    span{
+                        color: @red;
+                    }
+                }
+                .processing-notes{
+                    padding-top: 65px;
+                }
+            }
+            .serve-news-right{
+                float: left;
+                width: 750px;
+                .list{
+                    height: 35px;
+                    margin-right: 15px;
+                    margin-bottom: 20px;
+                }
+                .list-input{
+                    margin-bottom: 32px;
+                    margin-top: -11px;
+                }
+                .list-remarks{
+                    padding-top: 78px;
+                }
+            }
+        }
+        //表单
+        .ant-row{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .ant-select{
+            width: 172px;
+        }
+    }
+    //底部按钮
+    .purchase-detail-bottom{
+        // border-top: 1px solid @gray;
+        text-align: center;
+        padding: 30px 120px 0 120px;
+        .bottom-detail{
+            padding-top: 1rem;
+            .ant-btn{
+                margin-right: 1.5rem;
+            }
+            .btn-delete{
+                border: 1px solid @bule;
+                color: @bule;
+            }
+        }
+
+    }
+    .logisticsr-name{
+        cursor: pointer;
+    }
+
+}
+
+    //底部拒绝退货弹出框
+    .decliner-order-blow {
+        width: 100%;
+        padding: 0 34px;
+        box-sizing: border-box;
+        .decliner-title {
+            margin-bottom: 10px;
+            font-size: @font-size-14;
+            color: @dark-gray;
+            span {
+                color: @red;
+            }
+        }
+        .decliner-wrap {
+            width: 100%;
+            padding: 5px 0;
+            box-sizing: border-box;
+            border: @list-border;
+            .list {
+                cursor: pointer;
+                width: 100%;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                color: @dark-gray;
+                padding-left: 24px;
+            }
+            .list-select {
+                background: #F2FBFF;
+            }
+        }
+    }

@@ -1,0 +1,11 @@
+*.iml
+.idea/
+.DS_Store
+Thumbs.db
+.project
+node_modules
+npm-debug.log
+.module-cache
+.package-lock.json
+dist
+

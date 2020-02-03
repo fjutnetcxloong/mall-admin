@@ -1,0 +1,247 @@
+@import "~style";
+.template-compile-four {
+    position: relative;
+    // .my-carousel{
+    //     .ant-carousel .slick-slide {
+    //         text-align: center;
+    //         height: 158px;
+    //         line-height: 158px;
+    //     }
+    // }
+    //静态图片
+    .static {
+        margin-right: 24px;
+        div {
+            margin-bottom: 12px;
+            span:nth-child(1) {
+                font-size: @font-size-16;
+                color: @dark-dark;
+                margin-right: 23px;
+            }
+            span:nth-child(2) {
+                font-size: @font-size-12;
+                color: @gray;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    //编辑面板
+    .compile-box {
+        margin-right: 48px;
+        //标题
+        .compile {
+            margin-bottom: 12px;
+            font-size: @font-size-16;
+            color: @dark-dark;
+        }
+        //搜索栏背景
+        .head {
+            width: 100%;
+            height: 110px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 110px;
+            }
+            .head-base {
+                width: 100%;
+                height: 110px;
+                position: absolute;
+                top: 0;
+                background-size: 100% 100% !important;
+                background: url("../../../../../../assets/images/fake.png") no-repeat center;
+            }
+        }
+        .ant-carousel .slick-dots li button{
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            background-color: #0c0c0c;
+        }
+        .ant-carousel .slick-dots li.slick-active button{
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: #c5d1e5;
+        }
+        .ant-carousel .slick-dots-bottom{
+            bottom: -10px;
+            right: 1rem;
+        }
+        .ant-carousel .slick-dots{
+            width: unset;
+        }
+        //banner图
+        .ant-carousel,.banner-img {
+            width: 372px;
+            min-height: 158px;
+            // height:316px !important;
+            // height: 447px;
+            // .slick-active{
+            //     height:145px;
+            // }
+            img{
+                width:100%;
+                display:block;
+            }
+            .slick-slide {
+                div {
+                    height: inherit;
+                }
+            }
+        }
+        //标题栏
+        .title-bar {
+            color: @dark-dark;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: @font-size-16;
+            span:nth-child(1) {
+                color: @gray;
+                padding: 0 10px 2px;
+                border-bottom: 1px solid @dark-dark;
+                margin-bottom: 10px;
+            }
+            div:nth-child(2) {
+                margin-top: 5px;
+                font-size: @font-size-14;
+                color: @dark-dark;
+            }
+        }
+
+        .new-box {
+            background: url("../../../../../../assets/images/base.png") no-repeat center;
+            background-size: 100% 100%;
+            height: 214px;
+            margin-bottom:  10px;
+            margin-top: 20px;
+            .new {
+                width: 80%;
+                margin-left: auto;
+                //text-align: right;
+                img {
+                    width: 100%;
+                    height: 140px;
+                    margin: 42px 0 7px 0;
+                }
+            }
+        }
+
+        .sell-box {
+            background: pink;
+            padding-top: 15px;
+            .title-bar {
+                color: @white;
+                span:nth-child(1){
+                    color: @white;
+                    border-bottom: 1px solid @white;
+                }
+                div:nth-child(2) {
+                    color: @white;
+                }
+            }
+            .sell {
+                padding: 0 40px;
+                margin-bottom: 10px;
+                .sell-goods {
+                    width: 100%;
+                    height: 132px;
+                    img {
+                        width: 100%;
+                        height: inherit;
+                    }
+                }
+            }
+        }
+        .sell-commodity-box {
+            display: flex;
+            padding: 0 25px;
+            flex-wrap: wrap;
+            .sell{
+                width: 100%;
+            }
+            .sell-commodity {
+                width: 50%;
+                padding: 0 4px;
+                margin-bottom: 10px;
+                height: 200px;
+                .sell-commodity-img {
+                    width: 100%;
+                    border: 1px solid @to-light-gray;
+                    height: 156px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        //公用标题-价格
+        .headline-price {
+            display: flex;
+            justify-content: space-between;
+            .headline {
+                font-size: @font-size-14;
+                margin-bottom: 3px;
+            }
+            .price {
+                span:nth-child(1) {
+                    color: @dark-dark;
+                    font-size: @font-size-10;
+                    margin-right: 10px;
+
+                    span {
+                        font-size: @font-size-14;
+                    }
+                }
+                span:nth-child(2) {
+                    font-size: @font-size-10;
+                    color: @gray;
+                    text-decoration:line-through
+                }
+            }
+        }
+
+        .headline-price-take {
+            display: flex;
+            justify-content: space-between;
+            .headline {
+                font-size: @font-size-14;
+                margin-bottom: 3px;
+            }
+            .price {
+                span:nth-child(1) {
+                    color: @dark-dark;
+                    font-size: @font-size-10;
+                    margin-right: 10px;
+
+                    span {
+                        font-size: @font-size-14;
+                    }
+                }
+                span:nth-child(2) {
+                    font-size: @font-size-10;
+                    color: @gray;
+                    text-decoration:line-through
+                }
+            }
+        }
+    }
+
+    .headline-price {
+        height: 24px;
+        .headline {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1!important;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+

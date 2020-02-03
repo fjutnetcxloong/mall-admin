@@ -1,0 +1,143 @@
+@import "~style";
+//@import "~antd/lib/form/style/index.less";
+
+.login-component-box{
+    .ant-card{
+    .ant-card-head-wrapper{
+        .ant-card-head-title{
+            font-size: @font-size-18;
+            color: @dark-dark;
+            font-weight: bolder;
+        }
+        .ant-card-extra {
+            span {
+                font-size: @font-size-14;
+            }
+        }
+    }
+    .icon-closeEys:before{
+        content:'\E686';
+    }
+    .icon-openEys:before{
+        content:'\e677';
+    }
+    .ant-input-suffix{
+        display: inline-block !important;
+        margin-right: 5px;
+    }
+    input::placeholder{
+        font-size: @font-size-12;
+    }
+    .bottom-link{
+        display: flex;
+        justify-content: space-between;
+    }
+    .forgetPass{
+        color:#008BCC;
+        font-size: @font-size-14;
+        text-align: right;
+        cursor: pointer;
+    }
+    .code{
+        .ant-input{
+            width: 160px;
+        }
+        .ant-form-item-children{
+            display: flex;
+            justify-content: space-between;
+            input {
+                flex: 1;
+            }
+        }
+    }
+    .agreement-privacy {
+        .ant-form-item-children {
+            display: flex;
+            .agreement {
+                .norm {
+                    cursor:pointer;
+                    color: #008BCC;
+                }
+                .ant-checkbox-wrapper {
+                    span:nth-child(2) {
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .privacy {
+                color: #008BCC;
+                cursor:pointer;
+            }
+        }
+    }
+
+}
+.login-card{
+    .login-card-title{
+        color: '#008bcc'
+    }
+    .ant-btn-danger{
+        background: @red;
+        border-color: @red;
+    }
+    .ant-card-head{
+        .ant-card-head-wrapper{
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .ant-card-body{
+        .ant-form{
+            .code{
+                .ant-form-item-control-wrapper{
+                    height: 62px;
+                }
+            }
+        }
+    }
+    .confirm {
+        margin-top: 80px;
+    }
+    .ant-form-item-control-wrapper{
+        width: 100% !important;
+    }
+    .account {
+        height: 68.4px;
+        margin-bottom: 0;
+        //margin-bottom: 28px;
+        //.ant-form-item {
+        //    margin-bottom: 28px;
+        //}
+        .ant-form-explain {
+            margin: 3px 0;
+        }
+    }
+    .import-password {
+        .ant-form-explain {
+            margin: 5px 0 -27px 0 ;
+        }
+    }
+}
+    .change-form1{
+        .ant-form-item-control-wrapper{
+            width: 100%;
+        }
+        .confirm {
+            margin-top: 80px;
+            .ant-btn-danger {
+                background:rgba(255,45,81,1);
+                box-shadow:0 0 40px 0 rgba(255,45,81,0.2);
+                border-radius:4px;
+            }
+        }
+    }
+    .comfirm-your-pwd{
+        .ant-form-item-control-wrapper{
+            .ant-form-item-control{
+                height: 62px;
+            }
+        }
+    }
+}
+
+

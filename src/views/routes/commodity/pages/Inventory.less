@@ -1,0 +1,95 @@
+@import "~style";
+
+//规格信息
+.specification {
+  .ant-card-bordered {
+      border: none;
+      .ant-card-head {
+          border-bottom: none;
+          .ant-card-head-wrapper {
+              padding: 0 24px;
+              background: #F7FAFA;
+          }
+      }
+      .ant-card-body {
+          padding: 24px 195px 0 145px;
+          .ant-form-item {
+              display: flex;
+          }
+          .set {
+              .ant-form-item-children {
+                  .standard{
+                      .ant-form-item-control-wrapper {
+                          width: 160px;
+                      }
+
+                  }
+                  .description{
+                      .ant-form-item-control-wrapper{
+                          width: 300px;
+                      }
+                      .ant-btn-link {
+                          padding-left: 0;
+                      }
+                  }
+              }
+          }
+          .list {
+              display: block!important;
+              .ant-table-placeholder {
+                  // margin-top: 1px;
+                  border-top: 1px solid #e6e6e6;
+              }
+          }
+          .volume-set {
+              .ant-form-item-label {
+                  line-height: 32px;
+                  overflow: inherit;
+              }
+              .ant-form-item-children {
+                  display: flex;
+                  justify-content: space-between;
+                  .ant-checkbox-wrapper {
+                      line-height: 30px;
+                  }
+                  .batch {
+                      display: flex;
+                      .ant-form-item {
+                          //width: 20%;
+                          margin: 0 15px;
+                          width: 120px;
+                          .ant-input-number {
+                              width: 120px;
+                          }
+                      }
+                  }
+              }
+              .ant-form-item-control-wrapper, .ant-form-item {
+                  width: 100%;
+              }
+              .altogether {
+                  margin-left: auto;
+                  .gross {
+                      text-align: right;
+                  }
+                  .ant-btn-link {
+                      padding: 0;
+                      margin-left: auto!important;
+                  }
+              }
+          }
+      }
+  }
+  .ant-table-tbody {
+      .ant-form-item {
+          margin: auto !important;
+          display: block!important;
+      }
+      p {
+          margin: auto;
+      }
+      .stock-error-color {
+          color: @red;
+      }
+  }
+}

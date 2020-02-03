@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="65px" height="65px" viewBox="0 0 65 65" enable-background="new 0 0 65 65" xml:space="preserve">
+<title>xfjj</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="_x30_.0_x5F_首页改版_x5F_v1" transform="translate(-430.000000, -352.000000)">
+		<g id="xfjj" transform="translate(421.000000, 343.000000)">
+			
+				<linearGradient id="Oval-9_1_" gradientUnits="userSpaceOnUse" x1="-251.4629" y1="455.4551" x2="-250.792" y2="454.624" gradientTransform="matrix(58 0 0 -58 14594.9688 26417.0938)">
+				<stop  offset="0" style="stop-color:#3CC5FF"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</linearGradient>
+			<circle id="Oval-9" fill="url(#Oval-9_1_)" cx="41" cy="39" r="29"/>
+			<path id="Oval-8" fill="none" stroke="#3095F9" stroke-width="4" stroke-linecap="round" d="M69.713,50.109
+				c2.471-7.869,1.691-16.719-2.891-24.344c-8.496-14.14-26.846-18.715-40.985-10.219c-14.14,8.496-18.715,26.846-10.219,40.984
+				c1.019,1.695,2.682,3.678,4.99,5.948"/>
+			<path id="value-1" fill="#F5A623" stroke="#F5A623" stroke-width="0.4" d="M69.02,55H58.258c-0.99,0-1.793,0.803-1.793,1.793
+				s0.803,1.794,1.793,1.794h6.246L52.602,68.995l-16.115-8.53c-0.524-0.262-1.148-0.25-1.661,0.033L16.99,69.363
+				c-0.872,0.474-1.191,1.564-0.717,2.432c0.33,0.6,0.943,0.937,1.579,0.937c0.291,0,0.584-0.071,0.857-0.223l17.014-8.413
+				l16.352,8.647c0.648,0.319,1.434,0.226,1.982-0.255l13.17-11.52v6.584c0,0.99,0.803,1.794,1.793,1.794s1.793-0.804,1.793-1.794
+				v-10.76C70.813,55.803,70.01,55,69.02,55z"/>
+			<g enable-background="new    ">
+				<path fill="#3095F9" d="M20.484,46V31.684h2.813l5.859,9.561v-9.561h2.686V46h-2.9l-5.771-9.336V46H20.484z"/>
+				<path fill="#3095F9" d="M32.579,46V31.684h10.615v2.422h-7.724v3.174h7.187v2.412h-7.187v3.896h7.998V46H32.579z"/>
+				<path fill="#3095F9" d="M45.629,46l-3.418-14.316h2.959l2.158,9.834l2.617-9.834h3.438l2.51,10l2.197-10H61L57.523,46h-3.066
+					l-2.852-10.703L48.764,46H45.629z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

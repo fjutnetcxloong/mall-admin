@@ -1,0 +1,110 @@
+@import "~style";
+
+//业务收入部分
+.revenues-of-order-container {
+  .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+      right: 1.5rem;
+  }
+  .ant-table-title{
+      border-bottom: 1px solid #e6e6e6;
+  }
+  .revenues-of-order-box {
+      .ant-collapse {
+          border: 0;
+          border-radius: 4px;
+      }
+  }
+
+  .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+      padding: 17px 24px;
+      padding-right: 40px;
+  }
+
+  .ant-collapse > .ant-collapse-item:last-child, .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+      border-radius: 4px;
+  }
+
+  .ant-collapse-extra {
+      color: @ginger-gray;
+      font-size: @font-size-12;
+  }
+
+  .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+      color: @ginger-gray;
+  }
+
+  .commodity-table-box {
+      background-color: @white;
+      border-radius:0 0 4px 4px;
+      table{
+          padding: 1.5rem;
+          th{
+              background: #F7FAFA;
+              border-bottom: 0;
+              text-align: center;
+          }
+          td{
+              text-align: center;
+              border-right: 0.0625rem solid #e8e8e8;
+          }
+          .ant-table-thead > tr > th.ant-table-selection-column{
+              width: 120px;
+          }
+          .ant-table-thead > tr > th.ant-table-selection-column::after {
+                content: '选中当页';
+                font-size: @font-size-14;
+                margin-left: 0.5rem;
+            }
+          .last-column{
+              border-right: 0;
+          }
+      }
+  }
+
+  .search-form-box {
+      background-color: @white;
+      .form-btn-right{
+          float: right;
+          .ant-form-item-control-wrapper{
+              right: -12px;
+          }
+      }
+      .ant-btn-link {
+          font-size: @font-size-12;
+      }
+
+      .ant-form-item-children {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: space-around;
+
+            .form-item-box {
+                .ant-input {
+                    display: inline-block;
+                    width: 70%;
+                }
+
+              .ant-calendar-picker {
+                  width: 18rem;
+
+                  .ant-input {
+                      width: 95%;
+                  }
+              }
+          }
+
+          .ant-calendar-range-picker-separator {
+              vertical-align: baseline;
+          }
+      }
+
+      .ant-calendar-picker-input.ant-input, .ant-input {
+          line-height: unset;
+      }
+
+      .ant-form-item-label {
+          line-height: 32px;
+      }
+  }
+}

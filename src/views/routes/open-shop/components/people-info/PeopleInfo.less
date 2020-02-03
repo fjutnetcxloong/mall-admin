@@ -1,0 +1,70 @@
+@import "~style";
+
+.login-form{
+    .ant-form-item-children{
+        display: flex;
+        flex-wrap: wrap;
+        .ant-upload{
+            width: 266px;
+            height: 160px;
+            background-size: 266px 160px;
+            padding: 0;
+            img{
+                width: 266px;
+                height: 160px;
+            }
+        }
+
+    }
+    // .ant-form-item-control-wrapper{
+    //     // width: auto;
+    // }
+    .ant-form-item-children > .ant-row:nth-child(1)  {
+        .ant-upload {
+            background: url('../../../../../assets//images//forword.png') no-repeat 0 0;
+        }
+    }
+    .ant-form-item-children > .ant-row:nth-child(2)  {
+        .ant-upload {
+            background: url('../../../../../assets//images//hou.png') no-repeat 0 0;
+        }
+    }
+    .ant-form-item-children > .ant-row:nth-child(3)  {
+        .ant-upload {
+            background: url('../../../../../assets//images//shouchi.png') no-repeat 0 0;
+        }
+    }
+    .upload-button{
+        margin-top: 100px;
+        background: #7D7D7D;
+        opacity:0.8;
+        color: @white;
+        justify-content: center;
+        // height: 35px;
+        height: 60px;
+        align-items: center;
+    }
+    // .upload-button1{
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     align-items: flex-end;
+    // }
+    .avatar-box{
+        .ant-form-item-control-wrapper {
+            .ant-form-item-control {
+                .ant-form-item-control-wrapper {
+                    width: auto;
+                }
+            }
+        }
+        .ant-form-item-label{
+            label{
+                top: -8px;
+            }
+        }
+    }
+    .effect-time span{
+        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
+    }
+}

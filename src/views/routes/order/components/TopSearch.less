@@ -1,0 +1,112 @@
+@import "~style";
+
+//顶部筛选查询
+.top-screen{
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    background: @white;
+    box-sizing: border-box;
+    overflow: hidden;
+    .navigation{
+        cursor: pointer;
+        padding: 0 24px;
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        border-bottom: @list-border;
+        font-size: @font-size-16;
+        .navigation-left{
+            float: left;
+        }
+        .navigation-right{
+            cursor: pointer;
+            float: right;
+            font-size: @font-size-12;
+            color: @ginger-gray;
+            .arrowhead{
+                width: 8px;
+                height: 8px;
+                border-top: 1px solid @ginger-gray;
+                border-right: 1px solid @ginger-gray;
+                float: right;
+                margin-top: 25px;
+                margin-left: 8px;
+                transform:rotate(-45deg);
+                transition: all 0.5s ease;
+            }
+            .arrowhead-up{
+                margin-top: 22px;
+                transform:rotate(-225deg);
+            }
+        }
+    }
+    .navigation-bottom{
+        overflow: hidden;
+        transition: all 0.5s ease;
+        height: 175px;
+        box-sizing: border-box;
+        .left-search{
+            height: 35px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            //padding: 0 20px;
+            padding: 0 15px;
+            .ant-row {
+                padding: 24px 8px;
+                //padding: 24px;
+                //margin: 24px 28px;
+                display: flex;
+                .ant-col-6 {
+                    width: 70px!important;
+                    line-height: 40px;
+                }
+                .ant-col-18 {
+                    flex: 1;
+                }
+            }
+            .status-search{
+                display: flex;
+                align-items: center;
+                .ant-cascader-picker{
+                    width: 100%;
+                }
+            }
+            .basis-input{
+                width: 100%;
+            }
+            .ant-calendar-picker{
+                width: 100%;
+            }
+        }
+        .navigation-bottom-btn{
+            margin-top: 20px;
+            padding-right: 24px;
+            padding-bottom: 24px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .empty-term{
+                cursor: pointer;
+                float: right;
+                font-size: @font-size-12;
+                margin-right: 12px;
+                color: @ginger-gray;
+            }
+            .of-sth-btn-wrap{
+                border-radius: 4px;
+            }
+        }
+        .ant-select-arrow {
+            color: @gray;
+            font-size: @font-size-14;
+        }
+    }
+    .navigation-up{
+        height: 0;
+    }
+    // .ant-select-selection--single{
+    //     width: 240px;
+    // }
+}
+

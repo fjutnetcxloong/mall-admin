@@ -1,0 +1,87 @@
+@import "~style";
+
+.area-selection {
+    .shade {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        height: 100%;
+        background-color: rgba(0,0,0,0.45);
+    }
+    .content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        width: 520px;
+        background: @white;
+        z-index: 1000!important;
+        border-radius: 4px;
+        .upper {
+            display: flex;
+            justify-content: space-between;
+            padding: 9px 24px;
+            line-height: 32px;
+            border-bottom: 1px solid #E6E6E6;
+            div {
+                font-size: @font-size-16;
+            }
+            span:before {
+                content: '\E65d';
+                font-size: @font-size-24;
+            }
+        }
+        .choice-box {
+            padding: 24px 24px 0px;
+            overflow-y: auto;
+            height: 500px;
+            .entire {
+                margin-bottom: 24px;
+                .ant-checkbox-wrapper {
+                    margin-right: 24px;
+                    .ant-checkbox {
+                        margin-right: 6px;
+                    }
+                }
+                .entire-selected {
+                    color: @gray;
+                }
+            }
+            .district {
+                display: flex;
+                margin-bottom: 15px;
+                .district-left {
+                    width: 25%;
+                }
+                .district-right {
+                    flex: 1;
+                    .ant-checkbox-group {
+                        width: 100%;
+                        .ant-checkbox-group-item {
+                            margin: 0 24px 17px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .selector-button {
+            padding: 10px 24px 20px;
+            text-align: right;
+            .ant-btn {
+                .zz-btn-short();
+            }
+            .ant-btn:nth-child(1) {
+                background: @white;
+                color: @dark-dark;
+                margin-right: 12px;
+            }
+            .ant-btn:nth-child(2) {
+                background: @bule;
+                color: @white;
+            }
+        }
+    }
+}

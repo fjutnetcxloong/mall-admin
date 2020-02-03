@@ -1,0 +1,68 @@
+@import "~style";
+
+.shop-setting{
+  //店铺模板样式
+  .template-container{
+    //模板头部样式
+    .template-top {
+        background: @white;
+        box-shadow:0 0 40px 0 rgba(204,204,204,0.1), 0 0 10px 0 rgba(204,204,204,0.2);
+        border-radius:4px;
+        margin-bottom: 24px;
+        p {
+            font-size: @font-size-16;
+            color: @dark-dark;
+            padding: 20px 24px;
+            border-bottom: 1px solid #E6E6E6;
+            margin-bottom: 0;
+        }
+        .current {
+            padding: 24px;
+            div:nth-child(1) {
+                margin-bottom: 31px;
+            }
+            .ant-btn {
+                .zz-btn-important();
+                width: 142px;
+            }
+        }
+    }
+    //模板内容样式
+    .template-box {
+        background: @white;
+        padding: 80px;
+        box-shadow:0 0 40px 0 rgba(204,204,204,0.1), 0 0 10px 0 rgba(204,204,204,0.2);
+        border-radius:4px;
+        .template-one {
+            text-align: center;
+            padding: 0 25px;
+            margin-bottom: 60px;
+            .template-one-top {
+                display: flex;
+                margin-bottom: 11px;
+                justify-content: space-between;
+            }
+            img {
+                width: 100%;
+                margin-bottom: 23px;
+            }
+            .examine-set {
+                display: flex;
+                justify-content: space-between;
+                .ant-btn {
+                    .zz-btn-normal();
+                    border: 1px solid;
+                    span {
+                        letter-spacing:3px;
+                    }
+                }
+                .ant-btn:nth-child(1) {
+                    color: @bule;
+                    border-color: @bule;
+                    background: @white;
+                }
+            }
+        }
+    }
+  }
+}

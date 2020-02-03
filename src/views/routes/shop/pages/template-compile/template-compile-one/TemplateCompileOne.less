@@ -1,0 +1,184 @@
+@import "~style";
+.template-compile-one {
+    //静态图片
+    .static {
+        margin-right: 24px;
+        div {
+            margin-bottom: 12px;
+            span:nth-child(1) {
+                font-size: @font-size-16;
+                color: @dark-dark;
+                margin-right: 23px;
+            }
+            span:nth-child(2) {
+                font-size: @font-size-12;
+                color: @gray;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    //编辑面板
+    .compile-box {
+        margin-right: 48px;
+        position: relative;
+        //标题
+        .compile {
+            margin-bottom: 12px;
+            font-size: @font-size-16;
+            color: @dark-dark;
+        }
+        //搜索栏背景
+        .head {
+            height: 104px;
+            background: url("../../../../../../assets/images/sea.png") no-repeat center;
+            .head-base {
+                //background:url(../../../../../../assets/images/fake.png ) no-repeat;
+                //background-size:100% 100%;
+                //width: 100%;
+                height: 104px;
+                background-size: 100% 100% !important;
+                background: url("../../../../../../assets/images/fake.png") no-repeat center;
+            }
+        }
+        //banner图
+        .ant-carousel,.banner-img {
+            width: 372px;
+            // height: 447px;
+            // .slick-active{
+            //     height:447px;
+            // }
+            min-height: 475px;
+            img{
+                width:100%;
+                display:block;
+            }
+            .slick-slide {
+                div {
+                    height: inherit;
+                }
+            }
+        }
+        .ant-carousel .slick-dots li button{
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            background-color: #0788d8;
+        }
+        .ant-carousel .slick-dots li.slick-active button{
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: #b0b2bb;
+        }
+        .ant-carousel .slick-dots-bottom{
+            bottom: -10px;
+            right: 1rem;
+        }
+        .ant-carousel .slick-dots{
+            width: unset;
+        }
+        //标题栏
+        .title-bar {
+            color: @dark-dark;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            p {
+                margin-bottom: 0;
+            }
+            .time {
+                font-size: @font-size-8;
+
+            }
+            .hot {
+                margin: 8px 0;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .fiery {
+                font-size: @font-size-12;
+            }
+        }
+        //商品标题-1
+        .commodity-title-one {
+            padding: 0 40px;
+                .Commodity {
+                    margin-bottom: 16px;
+                    img {
+                        width: 100%;
+                        height: 132px;
+                        margin-bottom: 6px;
+                    }
+                    .headline {
+                        display: flex;
+                        justify-content: space-between;
+                        .headline-left {
+                            font-size: @font-size-16;
+                        }
+                        .headline-right {
+                            span:nth-child(1) {
+                                font-size: @font-size-8;
+                                color: @dark-dark;
+                                span {
+                                    font-size: @font-size-16;
+                                }
+                            }
+                            span:nth-child(2) {
+                                font-size: @font-size-8;
+                                color: @gray;
+                                margin-left: 10px;
+                                text-decoration:line-through
+                            }
+                        }
+                    }
+                }
+        }
+        //商品标题-2
+        .commodity-title-two {
+            padding: 16px 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 14px;
+            // background-color: #e2f9ff;
+            .commodity-two {
+                width: 43%;
+                margin-bottom:16px;
+                img {
+                    width: 100%;
+                    height: 132px;
+                    margin-bottom: 6px;
+                }
+                .two-headline {
+                    font-size: @font-size-16;
+                    margin-bottom: 8px;
+                }
+                .two-price {
+                    span:nth-child(1) {
+                        font-size: @font-size-8;
+                        color: @dark-dark;
+                        span {
+                            font-size: @font-size-16;
+                        }
+                    }
+                    span:nth-child(2) {
+                        font-size: @font-size-8;
+                        color: @gray;
+                        margin-left: 10px;
+                        text-decoration:line-through
+                    }
+                }
+            }
+        }
+        .grounding {
+            background: #FF6633;
+        }
+
+    }
+}
+
+
+

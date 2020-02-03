@@ -1,0 +1,49 @@
+@import "~style";
+
+//商品信息
+.merchandise-news {
+  .ant-card-bordered{
+      border: none;
+      .ant-card-head {
+          border-bottom: none;
+          .ant-card-head-wrapper {
+              padding: 0 24px;
+              background: #F7FAFA;
+          }
+      }
+      .ant-card-body {
+          padding: 20px 116px 0;
+          .ant-form-item {
+              display: flex;
+              .ant-form-item-label {
+                  width: 80px;
+                  margin-right: 14px;
+                  text-align: right;
+              }
+              .ant-form-item-control-wrapper {
+                  width: 360px;
+              }
+          }
+          .commodity-figure {
+              .ant-form-item-children {
+                  div:nth-child(1) {
+                      display: flex;
+                      button {
+                          margin: auto 10px auto;
+                      }
+                  }
+              }
+          }
+          .grouping {
+              .ant-form-item-control-wrapper {
+                  .ant-form-item-control {
+                      display: flex;
+                      .ant-form-item-children {
+                          flex: 1;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

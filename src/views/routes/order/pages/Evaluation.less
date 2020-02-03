@@ -1,0 +1,195 @@
+@import "~style";
+
+.evaluation-online{
+    .evaluation{
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 14px;
+        padding: 24px;
+        box-sizing: border-box;
+        background: @white;
+        .evaluation-top{
+            width: 100%;
+            height: 56px;
+            margin-bottom: 14px;
+            background: @light-green;
+            .Tabs-top-wrap{
+                width: 100%;
+                height: 58px;
+                .ant-col{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 58px;
+                }
+            }
+        }
+        .evaluation-list{
+            width: 100%;
+            margin-bottom: 24px;
+            border-bottom: @list-border;
+            .evaluation-list-top{
+                width: 100%;
+                height: 40px;
+                background: @light-green;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: @font-size-14;
+                .top-img{
+                    float: left;
+                    margin-left: 24px;
+                    width: 32px;
+                    height: 32px;
+                    margin-top: 4px;
+                    .goods-img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .goods-title{
+                    float: left;
+                    margin-left: 20px;
+                    line-height: 40px;
+                }
+                .standards{
+                    margin-left: 60px;
+                    float: left;
+                    line-height: 40px;
+                    span{
+                        margin-right: 6px;
+                        color: @gray;
+                    }
+                }
+                .order-id{
+                    float: right;
+                    margin-right: 24px;
+                }
+            }
+            .evaluation-bottom{
+                width: 100%;
+                .Tabs-top-wrap{
+                    .ant-col{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 128px;
+                        border-right: @list-border;
+                        padding: 20px;
+                        box-sizing: border-box;
+                    }
+                    .now-wrap{
+                        padding: 0;
+                        .now-list{
+                            height: 128px;
+                            padding: 10px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            overflow-y: scroll;
+                            .now-list-text{
+                                margin-bottom: 10px;
+                                .badpost{
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .now-list-now{
+                                color: @red;
+                                color: @red;
+                            }
+                            .goods-img{
+                                width: 80px;
+                                height: 80px;
+                                display: inline-block;
+                            }
+
+                            .equalizer{
+                                color: @pink-yellow;
+                            }
+                        }
+                    }
+                    .evaluations{
+                        padding: 0;
+                        .evaluation-wrap{
+                            width: 100%;
+                            .evaluation-tops{
+                                width: 100%;
+                                height: 64px;
+                                text-align: center;
+                                .titles{
+                                    padding-top: 7px;
+                                    color: @dark-gray;
+                                }
+                                .title-icon{
+                                    .icon-spot:before {
+                                        content: '\E678';
+                                        color: #FFCC00;
+                                        font-size: @font-size-24;
+                                    }
+                                }
+                            }
+                            .evaluation-tops-wrap{
+                                border-bottom: @list-border;
+                            }
+                        }
+                    }
+                    .btn-detail{
+                        .zz-btn-short();
+                        font-size: @font-size-10;
+                        height: 32px;
+                        background: @bule;
+                        color: @white;
+                        margin-top: 8px;
+                        width: 100px;
+                    }
+                    .eval-btn{
+                        width: 100%;
+                        text-align: center;
+                        .order-text{
+                            cursor: pointer;
+                            font-size: @font-size-12;
+                            color: @ginger-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //分页面
+    .page-bottom{
+        width: 100%;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        padding:0 24px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        justify-content: flex-end;
+        font-size: @font-size-14;
+        .page-left{
+            color: @dark-gray;
+            margin-right: 12px;
+        }
+        .page-right{
+            margin-left: 12px;
+            span{
+                color: @crimson-red;
+            }
+        }
+    }
+    .of-sth-btn{
+        float: right;
+        width: 64px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: @bule;
+        color: @white;
+        cursor: pointer;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+

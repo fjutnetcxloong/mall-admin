@@ -1,0 +1,373 @@
+@import "~style";
+
+.order-management {
+    //头部
+    .delivery-detail{
+        width: 100%;
+        background: @white;
+        padding: 24px;
+        box-sizing: border-box;
+        .detail-step{
+            width: 100%;
+            padding:0 100px;
+            box-sizing: border-box;
+            .step{
+                height: 88px;
+                .step-info{
+                    .icon-one:before{
+                        content: '\e669';
+                        color: @bule;
+                    }
+                    .icon-two:before{
+                        content:'\E683'
+                    }
+                    .icon-three:before{
+                        content: '\E682'
+                    }
+                    .icon-four:before{
+                        content: '\E684'
+                    }
+                    .icon-five:before{
+                        content: '\e66a'
+                    }
+                    .ant-steps-item-icon{
+                        width: 40px !important;
+                        height: 40px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 88px;
+                    }
+                    .ant-steps-item-tail{
+                        left: 5px;
+                        line-height: 10px;
+                        padding: 3.5px 34px;
+                    }
+                    .ant-steps-item-tail::after{
+                        height: 2px;
+                    }
+                    .activate{
+                        .ant-steps-item-icon{
+                            border: 1px solid @bule;
+                        }
+                    }
+                    .not-activate{
+                        .ant-steps-item-icon{
+                            background: #E6E6E6;
+                        }
+                    }
+                }
+                .ant-steps-item-icon > .ant-steps-icon {
+                    top: -22px;
+                }
+            }
+        }
+        .detail-step-bottom{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 60px;
+            padding-bottom: 30px;
+            border-bottom: @list-border;
+            .order-status{
+                display: flex;
+                font-size: @font-size-16;
+                font-weight: @font-weight-bold;
+                margin-right: 4px;
+                .shop-status{
+                    color: @bule;
+                }
+                .order-status-assess{
+                    margin-left: 60px;
+                    color: @pink-yellow;
+                    font-size: @font-size-14;
+                }
+            }
+            .order-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                .btn-delete{
+                    .zz-btn-short();
+                    font-size: @font-size-12;
+                    height: 32px;
+                    color: @bule;
+                    background: @white;
+                    border:1px solid @bule;
+                    width: 128px;
+                    margin-right: 10px;
+                    margin-top: 0;
+                }
+                .btn-detail{
+                    width: 128px;
+                }
+                .order-text{
+                    cursor: pointer;
+                    color: @ginger-gray;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+//内容区域
+.delivery-content{
+    width: 100%;
+    background: @white;
+    padding-bottom:70px;
+    .top-detail{
+        width: 100%;
+        display: flex;
+        padding:0 24px;
+        box-sizing: border-box;
+        align-items: center;
+        font-weight: @font-weight-bold;
+        font-size: @font-size-16;
+        .top-uid{
+            margin-right: 60px;
+            .uid{
+                font-weight: @font-weight-normal;
+            }
+        }
+        .top-name{
+            cursor: pointer;
+            .name{
+                font-weight: @font-weight-normal;
+            }
+        }
+        .top-name:after{
+            content: '\E670';
+            font-size: @font-size-22;
+            color: @bule;
+            margin-left: 1.5rem;
+            vertical-align: sub;
+        }
+    }
+    .goods-detail{
+        width: 100%;
+        padding:0 24px;
+        box-sizing: border-box;
+        margin-top: 60px;
+        .h128{
+            height: 128px;
+        }
+        .goods-name{
+            margin-bottom: 30px;
+            font-size: @font-size-16;
+            color: @dark-dark;
+        }
+    }
+
+        //    商品信息
+        .Tabs-frame-list{
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 24px;
+            .list-top{
+                font-weight: @font-weight-bold;
+                width: 100%;
+                height: 40px;
+                padding:0 22px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                background: @light-green;
+                font-size: @font-size-14;
+                font-weight: 300;
+                .list-top-row{
+                    width: 100%;
+                    color: @dark-dark;
+                    font-weight: 500;
+                    .ant-col{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .identifier{
+                            justify-content: end;
+                        }
+                    }
+                    .list-right{
+                        text-align: right;
+                    }
+                }
+            }
+            .list-bottom{
+                width: 100%;
+                background: @white;
+                .list-touch{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .orderList{
+                        width: 100%;
+                        .list-touch-bottom:last-child{
+                            border-right: @list-border;
+                        }
+                    }
+                    .list-touch-bottom{
+                        height: 131.5px;
+                        border-right: @list-border;
+                        padding:16px 11px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        font-size: @font-size-14;
+                        border-bottom: @list-border;
+                        color: @dark-gray;
+                        div{
+                            line-height: 17px;
+                        }
+                        .phone{
+                            margin-bottom: 6px;
+                        }
+                        .order-status{
+                            width: 100%;
+                            text-align: center;
+                            .status-remind{
+                                margin-top: 10px;
+                                color: @pink-yellow;
+                                font-size: @font-size-12;
+                            }
+                        }
+                        .order-btn{
+                            width: 100%;
+                            font-size: @font-size-12;
+                            text-align: center;
+                            .order-text{
+                                cursor: pointer;
+                                color: @bule;
+                            }
+                            .btn-detail{
+                                .zz-btn-short();
+                                font-size: @font-size-10;
+                                height: 24px;
+                                background: @bule;
+                                color: @white;
+                                margin-top: 8px;
+                                width: 80px;
+                            }
+                            .btn-delete{
+                                .zz-btn-short();
+                                font-size: @font-size-12;
+                                height: 24px;
+                                color: @bule;
+                                background: @white;
+                                border:1px solid @bule;
+                                margin-top: 8px;
+                                width: 80px;
+                            }
+                        }
+                        .goods-wrap{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            .goods{
+                                height: 96px;
+                                display: flex;
+                                .goods-img{
+                                    width: 96px;
+                                    height: 96px;
+                                    float: left;
+                                    margin-left: 12px;
+                                }
+                                .goods-title{
+                                    float: left;
+                                    height: 96px;
+                                    margin-left: 12px;
+                                    .goods-head{
+                                        width: 160px;
+                                        .TextareaOverflow();
+                                        font-size: @font-size-14;
+                                        font-weight: @font-weight-bold;
+                                    }
+                                    .goods-specs{
+                                        margin-top: 8px;
+                                        font-size: @font-size-12;
+                                        color: @gray;
+                                        .specs{
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                    .goods-num{
+                                        margin-top: 10px;
+                                        position: absolute;
+                                        bottom: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .list-touch-bottom:last-child{
+                        border-right: 0;
+                    }
+                }
+            }
+            .list-bottom-root{
+                width: 100%;
+                height: 27px;
+                border-bottom: @list-border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:0 24px;
+                box-sizing: border-box;
+            }
+        }
+        //    费用信息
+        .expenses{
+            width: 100%;
+            text-align: center;
+            span{
+                width: 20%;
+                display: inline-block;
+            }
+            .expenses-top{
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                background: @light-green;
+            }
+            .expenses-detail{
+                width: 100%;
+                height: 43px;
+                line-height: 43px;
+                border-bottom: @list-border;
+                span{
+                    border-right: @list-border;
+                }
+                span:last-child{
+                    border-right: 0;
+                }
+            }
+        }
+        .expenses-news{
+            span{
+                width: 25%;
+            }
+            .expenses-detail{
+                border-bottom: 0;
+            }
+        }
+    }
+    //物流发货
+    .logistics{
+        width: 100%;
+        .company{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .company-name{
+                margin-right: 10px;
+                .red{
+                    color: red;
+                }
+            }
+            .ant-cascader-picker{
+                width: 240px;
+            }
+        }
+    }
+}
