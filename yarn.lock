@@ -3474,10 +3474,10 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-loader@^1.1.5:
+file-loader@^1.1.11:
   version "1.1.11"
-  resolved "https://registry.npm.taobao.org/file-loader/download/file-loader-1.1.11.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffile-loader%2Fdownload%2Ffile-loader-1.1.11.tgz#6fe886449b0f2a936e43cabaac0cdbfb369506f8"
-  integrity sha1-b+iGRJsPKpNuQ8q6rAzb+zaVBvg=
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-1.1.11.tgz#6fe886449b0f2a936e43cabaac0cdbfb369506f8"
+  integrity sha512-TGR4HU7HUsGg6GCOPJnFk06RhWgEWFLAGWiT6rcD+GRC2keU3s9RGJ+b3Z6/U73jwwNb2gKLJ7YCrp+jvU4ALg==
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.4.5"
@@ -8390,9 +8390,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 ua-parser-js@^0.7.18:
-  version "0.7.20"
-  resolved "https://registry.npm.taobao.org/ua-parser-js/download/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha1-dScXi4L2pioPJD0flP0w4+PCEJg=
+  version "0.7.28"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
+  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
 uglify-js@3.4.x:
   version "3.4.10"
