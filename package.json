@@ -89,7 +89,7 @@
     "json-loader": "^0.5.4",
     "less": "^2.7.3",
     "less-loader": "^4.0.4",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "mockjs": "^1.0.1-beta3",
     "open-browser-webpack-plugin": "0.0.5",
     "postcss-loader": "^2.0.6",
